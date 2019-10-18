@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jefe5.ogg-4537f084d36eb38448a63359f34db494.oggstr"
+
+[deps]
+
+source_file="res://asset/musica/jefe5.ogg"
+dest_files=[ "res://.import/jefe5.ogg-4537f084d36eb38448a63359f34db494.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://asset/musica/mapamundi.ogg" type="AudioStream" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 144.2
+margin_top = 82.9828
+margin_right = 244.2
+margin_bottom = 182.983
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 156.276
+margin_top = 411.633
+margin_right = 256.276
+margin_bottom = 511.633
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 799.963
+margin_top = 405.332
+margin_right = 899.963
+margin_bottom = 505.332
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 798.539
+margin_top = 88.4243
+margin_right = 898.539
+margin_bottom = 188.424
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
