@@ -1,0 +1,178 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://trivia1.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 698.137
+margin_top = 96.8706
+margin_right = 998.137
+margin_bottom = 246.871
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 698.137
+margin_top = 96.8706
+margin_right = 998.137
+margin_bottom = 246.871
+
+[node name="Button11" type="Button" parent="."]
+margin_left = 698.137
+margin_top = 96.8706
+margin_right = 998.137
+margin_bottom = 246.871
+
+[node name="Button16" type="Button" parent="."]
+margin_left = 698.137
+margin_top = 96.8706
+margin_right = 998.137
+margin_bottom = 246.871
+
+[node name="Button21" type="Button" parent="."]
+margin_left = 698.137
+margin_top = 96.8706
+margin_right = 998.137
+margin_bottom = 246.871
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 749.912
+margin_top = 278.921
+margin_right = 949.912
+margin_bottom = 328.921
+
+[node name="Button7" type="Button" parent="."]
+margin_left = 749.912
+margin_top = 278.921
+margin_right = 949.912
+margin_bottom = 328.921
+
+[node name="Button12" type="Button" parent="."]
+margin_left = 749.912
+margin_top = 278.921
+margin_right = 949.912
+margin_bottom = 328.921
+
+[node name="Button17" type="Button" parent="."]
+margin_left = 749.912
+margin_top = 278.921
+margin_right = 949.912
+margin_bottom = 328.921
+
+[node name="Button22" type="Button" parent="."]
+margin_left = 749.912
+margin_top = 278.921
+margin_right = 949.912
+margin_bottom = 328.921
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 751.583
+margin_top = 364.1
+margin_right = 951.583
+margin_bottom = 414.1
+
+[node name="Button8" type="Button" parent="."]
+margin_left = 751.583
+margin_top = 364.1
+margin_right = 951.583
+margin_bottom = 414.1
+
+[node name="Button13" type="Button" parent="."]
+margin_left = 751.583
+margin_top = 364.1
+margin_right = 951.583
+margin_bottom = 414.1
+
+[node name="Button18" type="Button" parent="."]
+margin_left = 751.583
+margin_top = 364.1
+margin_right = 951.583
+margin_bottom = 414.1
+
+[node name="Button23" type="Button" parent="."]
+margin_left = 751.583
+margin_top = 364.1
+margin_right = 951.583
+margin_bottom = 414.1
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 750.266
+margin_top = 526.288
+margin_right = 950.266
+margin_bottom = 576.288
+
+[node name="Button9" type="Button" parent="."]
+margin_left = 750.266
+margin_top = 526.288
+margin_right = 950.266
+margin_bottom = 576.288
+
+[node name="Button14" type="Button" parent="."]
+margin_left = 750.266
+margin_top = 526.288
+margin_right = 950.266
+margin_bottom = 576.288
+
+[node name="Button19" type="Button" parent="."]
+margin_left = 750.266
+margin_top = 526.288
+margin_right = 950.266
+margin_bottom = 576.288
+
+[node name="Button24" type="Button" parent="."]
+margin_left = 750.266
+margin_top = 526.288
+margin_right = 950.266
+margin_bottom = 576.288
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 753.253
+margin_top = 442.599
+margin_right = 953.253
+margin_bottom = 492.599
+
+[node name="Button10" type="Button" parent="."]
+margin_left = 753.253
+margin_top = 442.599
+margin_right = 953.253
+margin_bottom = 492.599
+
+[node name="Button15" type="Button" parent="."]
+margin_left = 753.253
+margin_top = 442.599
+margin_right = 953.253
+margin_bottom = 492.599
+
+[node name="Button20" type="Button" parent="."]
+margin_left = 753.253
+margin_top = 442.599
+margin_right = 953.253
+margin_bottom = 492.599
+
+[node name="Button25" type="Button" parent="."]
+margin_left = 753.253
+margin_top = 442.599
+margin_right = 953.253
+margin_bottom = 492.599
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_Button7_pressed"]
+[connection signal="pressed" from="Button12" to="." method="_on_Button12_pressed"]
+[connection signal="pressed" from="Button17" to="." method="_on_Button17_pressed"]
+[connection signal="pressed" from="Button22" to="." method="_on_Button22_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_Button8_pressed"]
+[connection signal="pressed" from="Button13" to="." method="_on_Button13_pressed"]
+[connection signal="pressed" from="Button18" to="." method="_on_Button18_pressed"]
+[connection signal="pressed" from="Button23" to="." method="_on_Button23_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_Button9_pressed"]
+[connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]
+[connection signal="pressed" from="Button19" to="." method="_on_Button19_pressed"]
+[connection signal="pressed" from="Button24" to="." method="_on_Button24_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button10" to="." method="_on_Button10_pressed"]
+[connection signal="pressed" from="Button15" to="." method="_on_Button15_pressed"]
+[connection signal="pressed" from="Button20" to="." method="_on_Button20_pressed"]
+[connection signal="pressed" from="Button25" to="." method="_on_Button25_pressed"]

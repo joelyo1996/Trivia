@@ -1,11 +1,14 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/9501281d.jpg" type="Texture" id=2]
 [ext_resource path="res://asset/musica/menu.ogg" type="AudioStream" id=3]
-[ext_resource path="res://asset/Imagenes/creditos.jpeg" type="Texture" id=4]
-[ext_resource path="res://asset/Imagenes/play1.jpeg" type="Texture" id=5]
-[ext_resource path="res://asset/musica/sonido de start.ogg" type="AudioStream" id=6]
+[ext_resource path="res://asset/Imagenes/boton muchoca2.png" type="Texture" id=4]
+[ext_resource path="res://asset/Imagenes/Quincho Games.png" type="Texture" id=5]
+[ext_resource path="res://asset/Imagenes/creditos.jpeg" type="Texture" id=6]
+[ext_resource path="res://asset/Imagenes/play1.jpeg" type="Texture" id=7]
+[ext_resource path="res://asset/musica/sonido de start.ogg" type="AudioStream" id=8]
+[ext_resource path="res://asset/Imagenes/boton muchoca3.png" type="Texture" id=9]
 
 [sub_resource type="Animation" id=1]
 resource_name = "boton_creditos_open"
@@ -98,13 +101,53 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
+[sub_resource type="Animation" id=4]
+resource_name = "silencio"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("silencio:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("silencio2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 2 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("silencio2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.0113827, 1.9893 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
 [node name="Node2D" type="Node2D"]
 position = Vector2( 536, 263 )
 script = ExtResource( 1 )
 
 [node name="play" type="Sprite" parent="."]
-position = Vector2( -22.6557, 36.0383 )
-scale = Vector2( 0.797983, 0.46886 )
+position = Vector2( -23.8164, 36.0383 )
+scale = Vector2( 0.799796, 0.46886 )
 texture = ExtResource( 2 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -112,25 +155,30 @@ stream = ExtResource( 3 )
 autoplay = true
 
 [node name="silencio" type="Button" parent="."]
-margin_left = -532.838
-margin_top = -260.28
-margin_right = -332.838
-margin_bottom = -160.28
-text = "silencio"
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -536.0
+margin_top = -262.0
+margin_right = 812.0
+margin_bottom = 490.0
+rect_scale = Vector2( 0.1, 0.1 )
+icon = ExtResource( 4 )
 
 [node name="quincho" type="Button" parent="."]
-margin_left = 285.13
-margin_top = 234.498
-margin_right = 485.13
-margin_bottom = 334.498
+margin_left = 273.809
+margin_top = 238.488
+margin_right = 2401.81
+margin_bottom = 1210.49
+rect_scale = Vector2( 0.1, 0.1 )
 text = "Quincho"
+icon = ExtResource( 5 )
 
 [node name="creditos" type="Button" parent="."]
-margin_left = -534.152
-margin_top = 162.455
-margin_right = -237.152
-margin_bottom = 355.455
-icon = ExtResource( 4 )
+margin_left = -534.918
+margin_top = 240.19
+margin_right = -237.918
+margin_bottom = 433.19
+rect_scale = Vector2( 0.5, 0.5 )
+icon = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -170,10 +218,18 @@ margin_left = -204.494
 margin_top = -51.7978
 margin_right = 170.506
 margin_bottom = 93.2022
-icon = ExtResource( 5 )
+icon = ExtResource( 7 )
 
 [node name="Audioplay" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
+stream = ExtResource( 8 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+anims/silencio = SubResource( 4 )
+
+[node name="silencio2" type="Sprite" parent="."]
+position = Vector2( -469.313, -227.171 )
+scale = Vector2( 0.140513, 0.111718 )
+texture = ExtResource( 9 )
 [connection signal="pressed" from="silencio" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="quincho" to="." method="_on_quincho_pressed"]
 [connection signal="pressed" from="creditos" to="." method="_on_creditos_pressed"]

@@ -1,7 +1,7 @@
 extends Node2D
 
 # Declare member variables here. Examples:
-var personaje=0
+# var a = 2
 # var b = "text"
 
 # Called when the node enters the scene tree for the first time.
@@ -14,12 +14,5 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://mapa.tscn")
-	personaje=1
-	pass # Replace with function body.
-
-
-func _on_Button2_pressed():
-	get_tree().change_scene("res://mapa.tscn")
-	personaje=2
+	get_tree().change_scene("res://trivia1.tscn")
 	pass # Replace with function body.
