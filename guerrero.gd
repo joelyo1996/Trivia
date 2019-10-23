@@ -6,16 +6,11 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	#personaje.connect("personaje1", self, "personaje")
 	pass # Replace with function body.
+func personaje():
+	$AnimationPlayer.play("guerrero")
 
-
-	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_Button_pressed():
-	get_tree().change_scene("res://trivia1.tscn")
-	pass # Replace with function body.

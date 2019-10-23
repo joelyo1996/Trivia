@@ -2,15 +2,22 @@ extends Node2D
 
 # Declare member variables here. Examples:
 var correcta = 0
-# var b = "text"
+var b = "text"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
 
+	pass # Replace with function body.
+func personaje1():
+	$AnimationPlayer.play("guerrero")
+	pass
+func personaje2():
+	preload("res://asset/Imagenes/Personaje femenino.png")
+	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	$Label.text="correctas "+ str(correcta)
+	pass
 
 
 func _on_Button_pressed():
@@ -200,4 +207,191 @@ func _on_Button25_pressed():
 	$Button23.queue_free()
 	$Button24.queue_free()
 	$Button25.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button27_pressed():
+	$Button26.queue_free()
+	$Button27.queue_free()
+	$Button28.queue_free()
+	$Button29.queue_free()
+	$Button30.queue_free()
+	correcta= correcta +1
+	pass # Replace with function body.
+
+
+func _on_Button26_pressed():
+	$Button26.queue_free()
+	$Button27.queue_free()
+	$Button28.queue_free()
+	$Button29.queue_free()
+	$Button30.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button28_pressed():
+	$Button26.queue_free()
+	$Button27.queue_free()
+	$Button28.queue_free()
+	$Button29.queue_free()
+	$Button30.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button29_pressed():
+	$Button26.queue_free()
+	$Button27.queue_free()
+	$Button28.queue_free()
+	$Button29.queue_free()
+	$Button30.queue_free()
+	pass 
+	
+
+
+func _on_Button32_pressed():
+	$Button31.queue_free()
+	$Button32.queue_free()
+	$Button33.queue_free()
+	$Button34.queue_free()
+	$Button35.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button31_pressed():
+	$Button31.queue_free()
+	$Button32.queue_free()
+	$Button33.queue_free()
+	$Button34.queue_free()
+	$Button35.queue_free()
+	correcta= correcta +1
+	pass # Replace with function body.
+
+
+func _on_Button33_pressed():
+	$Button31.queue_free()
+	$Button32.queue_free()
+	$Button33.queue_free()
+	$Button34.queue_free()
+	$Button35.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button34_pressed():
+	$Button31.queue_free()
+	$Button32.queue_free()
+	$Button33.queue_free()
+	$Button34.queue_free()
+	$Button35.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button37_pressed():
+	$Button36.queue_free()
+	$Button37.queue_free()
+	$Button38.queue_free()
+	$Button39.queue_free()
+	$Button40.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button36_pressed():
+	$Button36.queue_free()
+	$Button37.queue_free()
+	$Button38.queue_free()
+	$Button39.queue_free()
+	$Button40.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button38_pressed():
+	$Button36.queue_free()
+	$Button37.queue_free()
+	$Button38.queue_free()
+	$Button39.queue_free()
+	$Button40.queue_free()
+	
+	pass # Replace with function body.
+
+
+func _on_Button39_pressed():
+	$Button36.queue_free()
+	$Button37.queue_free()
+	$Button38.queue_free()
+	$Button39.queue_free()
+	$Button40.queue_free()
+	correcta= correcta +1
+	pass # Replace with function body.
+
+
+func _on_Button42_pressed():
+	$Button41.queue_free()
+	$Button42.queue_free()
+	$Button43.queue_free()
+	$Button44.queue_free()
+	$Button45.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button41_pressed():
+	$Button41.queue_free()
+	$Button42.queue_free()
+	$Button43.queue_free()
+	$Button44.queue_free()
+	$Button45.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button43_pressed():
+	$Button41.queue_free()
+	$Button42.queue_free()
+	$Button43.queue_free()
+	$Button44.queue_free()
+	$Button45.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button44_pressed():
+	$Button41.queue_free()
+	$Button42.queue_free()
+	$Button43.queue_free()
+	$Button44.queue_free()
+	$Button45.queue_free()
+	correcta= correcta +1
+	pass # Replace with function body.
+
+
+func _on_Button47_pressed():
+	$Button46.queue_free()
+	$Button47.queue_free()
+	$Button48.queue_free()
+	$Button49.queue_free()
+	$Button50.queue_free()
+	correcta= correcta +1
+	pass # Replace with function body.
+
+
+func _on_Button46_pressed():
+	$Button46.queue_free()
+	$Button47.queue_free()
+	$Button48.queue_free()
+	$Button49.queue_free()
+	$Button50.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button48_pressed():
+	$Button46.queue_free()
+	$Button47.queue_free()
+	$Button48.queue_free()
+	$Button49.queue_free()
+	$Button50.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button49_pressed():
+	$Button46.queue_free()
+	$Button47.queue_free()
+	$Button48.queue_free()
+	$Button49.queue_free()
+	$Button50.queue_free()
 	pass # Replace with function body.
