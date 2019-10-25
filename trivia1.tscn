@@ -1,53 +1,95 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://trivia1.gd" type="Script" id=1]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://maga.tscn" type="PackedScene" id=3]
 [ext_resource path="res://guerrero.tscn" type="PackedScene" id=4]
 
-[sub_resource type="DynamicFontData" id=7]
+[sub_resource type="DynamicFontData" id=1]
 font_path = "res://Fuente/kenvector_future.ttf"
 
-[sub_resource type="DynamicFont" id=8]
-font_data = SubResource( 7 )
+[sub_resource type="DynamicFont" id=2]
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 14
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFontData" id=8]
+font_path = "res://Fuente/kenvector_future.ttf"
+
+[sub_resource type="DynamicFont" id=9]
+font_data = SubResource( 8 )
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 25
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Fuente/kenvector_future.ttf"
+
+[sub_resource type="DynamicFont" id=14]
+font_data = SubResource( 13 )
+
+[sub_resource type="DynamicFont" id=15]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=16]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=17]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=18]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=19]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFontData" id=20]
+font_path = "res://Fuente/kenvector_future.ttf"
+
+[sub_resource type="DynamicFont" id=21]
+font_data = SubResource( 20 )
 
 [sub_resource type="DynamicFont" id=22]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=23]
-size = 14
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=24]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=25]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=26]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFontData" id=15]
+[sub_resource type="DynamicFontData" id=25]
 font_path = "res://Fuente/kenvector_future.ttf"
 
-[sub_resource type="DynamicFont" id=16]
-font_data = SubResource( 15 )
+[sub_resource type="DynamicFont" id=26]
+font_data = SubResource( 25 )
 
 [sub_resource type="DynamicFont" id=27]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=28]
 font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 25
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFontData" id=9]
-font_path = "res://Fuente/kenvector_future.ttf"
-
-[sub_resource type="DynamicFont" id=10]
-font_data = SubResource( 9 )
 
 [sub_resource type="DynamicFont" id=29]
 font_data = ExtResource( 2 )
@@ -58,17 +100,11 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=31]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=32]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=33]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFontData" id=17]
+[sub_resource type="DynamicFontData" id=32]
 font_path = "res://Fuente/kenvector_future.ttf"
 
-[sub_resource type="DynamicFont" id=18]
-font_data = SubResource( 17 )
+[sub_resource type="DynamicFont" id=33]
+font_data = SubResource( 32 )
 
 [sub_resource type="DynamicFont" id=34]
 font_data = ExtResource( 2 )
@@ -76,35 +112,17 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=35]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=5]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFontData" id=11]
+[sub_resource type="DynamicFontData" id=37]
 font_path = "res://Fuente/kenvector_future.ttf"
-
-[sub_resource type="DynamicFont" id=12]
-font_data = SubResource( 11 )
-
-[sub_resource type="DynamicFont" id=36]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=37]
-font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=38]
-font_data = ExtResource( 2 )
+font_data = SubResource( 37 )
 
-[sub_resource type="DynamicFont" id=39]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=40]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFontData" id=19]
+[sub_resource type="DynamicFontData" id=39]
 font_path = "res://Fuente/kenvector_future.ttf"
 
-[sub_resource type="DynamicFont" id=20]
-font_data = SubResource( 19 )
+[sub_resource type="DynamicFont" id=40]
+font_data = SubResource( 39 )
 
 [sub_resource type="DynamicFont" id=41]
 font_data = ExtResource( 2 )
@@ -112,22 +130,7 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=42]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=46]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFontData" id=3]
-font_path = "res://Fuente/kenvector_future.ttf"
-
-[sub_resource type="DynamicFont" id=4]
-font_data = SubResource( 3 )
-
-[sub_resource type="DynamicFontData" id=13]
-font_path = "res://Fuente/kenvector_future.ttf"
-
-[sub_resource type="DynamicFont" id=14]
-font_data = SubResource( 13 )
-
-[sub_resource type="DynamicFont" id=21]
+[sub_resource type="DynamicFont" id=36]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=43]
@@ -142,23 +145,13 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=47]
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=46]
+font_data = ExtResource( 2 )
+
 [sub_resource type="DynamicFont" id=48]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=50]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=49]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=51]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=6]
-font_data = ExtResource( 2 )
-
-[sub_resource type="Animation" id=1]
-resource_name = "guerrero"
+[sub_resource type="Animation" id=49]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Node2D:modulate")
 tracks/0/interp = 1
@@ -183,7 +176,7 @@ margin_left = 463.0
 margin_top = 97.0
 margin_right = 1023.0
 margin_bottom = 247.0
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 2 )
 text = "Que es pseudocódigo?"
 
 [node name="Button30" type="Button" parent="."]
@@ -191,7 +184,7 @@ margin_left = 464.0
 margin_top = 95.0
 margin_right = 1023.0
 margin_bottom = 245.0
-custom_fonts/font = SubResource( 22 )
+custom_fonts/font = SubResource( 3 )
 text = "Twine es una herramienta que sirve para crear"
 
 [node name="Button35" type="Button" parent="."]
@@ -199,7 +192,7 @@ margin_left = 461.785
 margin_top = 98.3509
 margin_right = 1024.79
 margin_bottom = 248.351
-custom_fonts/font = SubResource( 23 )
+custom_fonts/font = SubResource( 4 )
 text = "Construct es un motor  de VJ el cual se programa por…"
 
 [node name="Button40" type="Button" parent="."]
@@ -207,7 +200,7 @@ margin_left = 464.0
 margin_top = 97.0
 margin_right = 1021.0
 margin_bottom = 247.0
-custom_fonts/font = SubResource( 24 )
+custom_fonts/font = SubResource( 5 )
 text = "Que es un SDK?"
 
 [node name="Button45" type="Button" parent="."]
@@ -215,7 +208,7 @@ margin_left = 469.0
 margin_top = 97.0
 margin_right = 1018.0
 margin_bottom = 247.0
-custom_fonts/font = SubResource( 25 )
+custom_fonts/font = SubResource( 6 )
 text = "Que es el brainstorming?"
 
 [node name="Button50" type="Button" parent="."]
@@ -223,7 +216,7 @@ margin_left = 463.0
 margin_top = 95.0
 margin_right = 1023.0
 margin_bottom = 245.0
-custom_fonts/font = SubResource( 26 )
+custom_fonts/font = SubResource( 7 )
 text = "Un motor es drag and drop cuando:"
 
 [node name="Button6" type="Button" parent="."]
@@ -231,7 +224,7 @@ margin_left = 466.0
 margin_top = 97.0
 margin_right = 1021.0
 margin_bottom = 247.0
-custom_fonts/font = SubResource( 16 )
+custom_fonts/font = SubResource( 9 )
 text = "Un recurso tecnológico..."
 
 [node name="Button11" type="Button" parent="."]
@@ -239,7 +232,7 @@ margin_left = 469.0
 margin_top = 100.0
 margin_right = 1026.0
 margin_bottom = 250.0
-custom_fonts/font = SubResource( 27 )
+custom_fonts/font = SubResource( 10 )
 text = "Que es un motor de videojuegos?"
 
 [node name="Button16" type="Button" parent="."]
@@ -247,31 +240,31 @@ margin_left = 468.0
 margin_top = 100.0
 margin_right = 1026.0
 margin_bottom = 250.0
-custom_fonts/font = SubResource( 28 )
+custom_fonts/font = SubResource( 11 )
 text = "La arquitectura de un motor es de…"
 
 [node name="Button21" type="Button" parent="."]
-margin_left = 465.0
-margin_top = 100.0
-margin_right = 1026.0
-margin_bottom = 255.0
-custom_fonts/font = SubResource( 2 )
+margin_left = 462.207
+margin_top = 97.905
+margin_right = 1023.21
+margin_bottom = 252.905
+custom_fonts/font = SubResource( 12 )
 text = "Que es un diagrama de flujos?"
 
 [node name="Button2" type="Button" parent="."]
-margin_left = 421.831
-margin_top = 277.284
-margin_right = 1019.83
-margin_bottom = 327.284
-custom_fonts/font = SubResource( 10 )
-text = "Una descripción de alto nivel de un programa informático."
+margin_left = 422.0
+margin_top = 277.0
+margin_right = 1016.0
+margin_bottom = 327.0
+custom_fonts/font = SubResource( 14 )
+text = "Una descripción de alto nivel de un programa."
 
 [node name="Button27" type="Button" parent="."]
 margin_left = 420.0
 margin_top = 281.0
 margin_right = 1016.0
 margin_bottom = 331.0
-custom_fonts/font = SubResource( 29 )
+custom_fonts/font = SubResource( 15 )
 text = "Contenido interactivo en formato web."
 
 [node name="Button32" type="Button" parent="."]
@@ -279,7 +272,7 @@ margin_left = 419.0
 margin_top = 279.0
 margin_right = 1019.0
 margin_bottom = 329.0
-custom_fonts/font = SubResource( 30 )
+custom_fonts/font = SubResource( 16 )
 text = "Código C#"
 
 [node name="Button37" type="Button" parent="."]
@@ -287,7 +280,7 @@ margin_left = 422.095
 margin_top = 276.0
 margin_right = 1022.09
 margin_bottom = 326.0
-custom_fonts/font = SubResource( 31 )
+custom_fonts/font = SubResource( 17 )
 text = "herramientas de mecánica con propósitos específicos"
 
 [node name="Button42" type="Button" parent="."]
@@ -295,7 +288,7 @@ margin_left = 420.0
 margin_top = 277.0
 margin_right = 1022.0
 margin_bottom = 327.0
-custom_fonts/font = SubResource( 32 )
+custom_fonts/font = SubResource( 18 )
 text = "Denominación del clima cuando llueven cerebros."
 
 [node name="Button47" type="Button" parent="."]
@@ -303,7 +296,7 @@ margin_left = 424.0
 margin_top = 277.0
 margin_right = 1021.0
 margin_bottom = 327.0
-custom_fonts/font = SubResource( 33 )
+custom_fonts/font = SubResource( 19 )
 text = "Se programa mediante bloques de acción y condición"
 
 [node name="Button7" type="Button" parent="."]
@@ -311,7 +304,7 @@ margin_left = 429.0
 margin_top = 279.0
 margin_right = 1018.0
 margin_bottom = 329.0
-custom_fonts/font = SubResource( 18 )
+custom_fonts/font = SubResource( 21 )
 text = "Es algo que aún no existe y debe ser inventado."
 
 [node name="Button12" type="Button" parent="."]
@@ -319,7 +312,7 @@ margin_left = 421.0
 margin_top = 277.0
 margin_right = 1019.0
 margin_bottom = 327.0
-custom_fonts/font = SubResource( 34 )
+custom_fonts/font = SubResource( 22 )
 text = "Es un aparato eléctrico que hace girar una correa."
 
 [node name="Button17" type="Button" parent="."]
@@ -327,7 +320,7 @@ margin_left = 423.0
 margin_top = 276.0
 margin_right = 1017.0
 margin_bottom = 326.0
-custom_fonts/font = SubResource( 35 )
+custom_fonts/font = SubResource( 23 )
 text = "Módulos dependientes unos de otros."
 
 [node name="Button22" type="Button" parent="."]
@@ -335,7 +328,7 @@ margin_left = 423.973
 margin_top = 273.037
 margin_right = 1020.97
 margin_bottom = 328.037
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 24 )
 text = "Representación gráfica de un algoritmo o un proceso."
 
 [node name="Button3" type="Button" parent="."]
@@ -343,7 +336,7 @@ margin_left = 429.0
 margin_top = 364.0
 margin_right = 1017.0
 margin_bottom = 414.0
-custom_fonts/font = SubResource( 12 )
+custom_fonts/font = SubResource( 26 )
 text = "Un código pegado a otro código"
 
 [node name="Button26" type="Button" parent="."]
@@ -351,7 +344,7 @@ margin_left = 429.0
 margin_top = 364.0
 margin_right = 1018.0
 margin_bottom = 414.0
-custom_fonts/font = SubResource( 36 )
+custom_fonts/font = SubResource( 27 )
 text = "Videojuegos 2D y 3D."
 
 [node name="Button31" type="Button" parent="."]
@@ -359,7 +352,7 @@ margin_left = 422.0
 margin_top = 360.0
 margin_right = 1015.0
 margin_bottom = 419.0
-custom_fonts/font = SubResource( 37 )
+custom_fonts/font = SubResource( 28 )
 text = "Interfaz visual, basado en Drag and Drop "
 
 [node name="Button36" type="Button" parent="."]
@@ -367,7 +360,7 @@ margin_left = 426.0
 margin_top = 355.0
 margin_right = 1017.0
 margin_bottom = 415.0
-custom_fonts/font = SubResource( 38 )
+custom_fonts/font = SubResource( 29 )
 text = "Kit de programas que se pueden comprar por Steam."
 
 [node name="Button41" type="Button" parent="."]
@@ -375,7 +368,7 @@ margin_left = 429.0
 margin_top = 364.0
 margin_right = 1019.0
 margin_bottom = 419.0
-custom_fonts/font = SubResource( 39 )
+custom_fonts/font = SubResource( 30 )
 text = "Es una técnica de programación."
 
 [node name="Button46" type="Button" parent="."]
@@ -383,23 +376,23 @@ margin_left = 428.0
 margin_top = 361.0
 margin_right = 1016.0
 margin_bottom = 416.0
-custom_fonts/font = SubResource( 40 )
+custom_fonts/font = SubResource( 31 )
 text = "Se programa mediante scripts"
 
 [node name="Button8" type="Button" parent="."]
 margin_left = 428.0
-margin_top = 358.0
-margin_right = 999.0
-margin_bottom = 415.0
-custom_fonts/font = SubResource( 20 )
-text = "Se vale de la tecnología para cumplir su propósito (correcto)"
+margin_top = 360.0
+margin_right = 1013.0
+margin_bottom = 417.0
+custom_fonts/font = SubResource( 33 )
+text = "Se vale de la tecnología para cumplir su propósito "
 
 [node name="Button13" type="Button" parent="."]
 margin_left = 432.0
 margin_top = 362.0
 margin_right = 1015.0
 margin_bottom = 417.0
-custom_fonts/font = SubResource( 41 )
+custom_fonts/font = SubResource( 34 )
 text = "Es una computadora para hacer videojuegos"
 
 [node name="Button18" type="Button" parent="."]
@@ -407,16 +400,8 @@ margin_left = 431.0
 margin_top = 364.0
 margin_right = 1009.0
 margin_bottom = 414.0
-custom_fonts/font = SubResource( 42 )
+custom_fonts/font = SubResource( 35 )
 text = "No tiene arquitectura."
-
-[node name="Button39" type="Button" parent="."]
-margin_left = 427.0
-margin_top = 356.0
-margin_right = 1017.0
-margin_bottom = 420.0
-custom_fonts/font = SubResource( 46 )
-text = "herramientas de soft con propósitos específicos"
 
 [node name="Button23" type="Button" parent="."]
 margin_left = 425.0
@@ -424,7 +409,7 @@ margin_top = 357.0
 margin_right = 1012.0
 margin_bottom = 421.0
 rect_pivot_offset = Vector2( 58.417, 15.9 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 38 )
 text = "Representación gráfica del sistema digestivo."
 
 [node name="Button4" type="Button" parent="."]
@@ -432,73 +417,15 @@ margin_left = 441.0
 margin_top = 438.0
 margin_right = 1014.0
 margin_bottom = 488.0
-custom_fonts/font = SubResource( 14 )
+custom_fonts/font = SubResource( 40 )
 text = "Un mensaje codificado."
-
-[node name="Button28" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
-
-[node name="Button33" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
-
-[node name="Button38" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
-
-[node name="Button43" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
-
-[node name="Button48" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
-
-[node name="Button9" type="Button" parent="."]
-margin_left = 442.952
-margin_top = 522.948
-margin_right = 985.952
-margin_bottom = 572.948
-custom_fonts/font = SubResource( 21 )
-text = "Es la forma en la que piensan las computadoras."
-
-[node name="Button14" type="Button" parent="."]
-margin_left = 443.33
-margin_top = 520.363
-margin_right = 1007.33
-margin_bottom = 570.363
-custom_fonts/font = SubResource( 43 )
-text = "Son herramientas para desarrollar un videojuego"
-
-[node name="Button19" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
-
-[node name="Button24" type="Button" parent="."]
-margin_left = 750.266
-margin_top = 526.288
-margin_right = 950.266
-margin_bottom = 576.288
 
 [node name="Button29" type="Button" parent="."]
 margin_left = 441.0
 margin_top = 443.0
 margin_right = 1016.0
 margin_bottom = 493.0
-custom_fonts/font = SubResource( 44 )
+custom_fonts/font = SubResource( 41 )
 text = "Videoclips."
 
 [node name="Button34" type="Button" parent="."]
@@ -506,15 +433,23 @@ margin_left = 441.0
 margin_top = 436.0
 margin_right = 1011.0
 margin_bottom = 493.0
-custom_fonts/font = SubResource( 45 )
+custom_fonts/font = SubResource( 42 )
 text = "No se programa."
+
+[node name="Button39" type="Button" parent="."]
+margin_left = 431.522
+margin_top = 432.874
+margin_right = 1021.52
+margin_bottom = 496.874
+custom_fonts/font = SubResource( 36 )
+text = "herramientas de soft con propósitos específicos"
 
 [node name="Button44" type="Button" parent="."]
 margin_left = 441.0
 margin_top = 439.0
 margin_right = 1012.0
 margin_bottom = 489.0
-custom_fonts/font = SubResource( 47 )
+custom_fonts/font = SubResource( 43 )
 text = "Técnica grupal para obtener ideas"
 
 [node name="Button49" type="Button" parent="."]
@@ -522,7 +457,7 @@ margin_left = 436.0
 margin_top = 438.0
 margin_right = 1018.0
 margin_bottom = 493.0
-custom_fonts/font = SubResource( 48 )
+custom_fonts/font = SubResource( 44 )
 text = "No se programa"
 
 [node name="Button10" type="Button" parent="."]
@@ -530,31 +465,31 @@ margin_left = 439.0
 margin_top = 443.0
 margin_right = 1015.0
 margin_bottom = 493.0
-custom_fonts/font = SubResource( 50 )
+custom_fonts/font = SubResource( 45 )
 text = "Es la forma en la que piensan las computadoras."
-
-[node name="Button20" type="Button" parent="."]
-margin_left = 436.0
-margin_top = 436.0
-margin_right = 1012.0
-margin_bottom = 486.0
-custom_fonts/font = SubResource( 49 )
-text = "Capas independientes y reutilizables."
 
 [node name="Button15" type="Button" parent="."]
 margin_left = 439.0
 margin_top = 439.0
 margin_right = 1015.0
 margin_bottom = 489.0
-custom_fonts/font = SubResource( 51 )
+custom_fonts/font = SubResource( 47 )
 text = "Es una computadora para hacer videojuegos"
+
+[node name="Button20" type="Button" parent="."]
+margin_left = 436.0
+margin_top = 436.0
+margin_right = 1012.0
+margin_bottom = 486.0
+custom_fonts/font = SubResource( 46 )
+text = "Capas independientes y reutilizables."
 
 [node name="Button25" type="Button" parent="."]
 margin_left = 441.0
 margin_top = 434.0
 margin_right = 1014.0
 margin_bottom = 495.0
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 48 )
 text = "Es un dibujo a mano del auto de volver al futuro."
 
 [node name="Label" type="Label" parent="."]
@@ -571,7 +506,7 @@ visible = false
 position = Vector2( 420.886, 208.773 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/guerrero = SubResource( 1 )
+anims/guerrero = SubResource( 49 )
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button27" to="." method="_on_Button27_pressed"]
 [connection signal="pressed" from="Button32" to="." method="_on_Button32_pressed"]
@@ -591,23 +526,14 @@ anims/guerrero = SubResource( 1 )
 [connection signal="pressed" from="Button8" to="." method="_on_Button8_pressed"]
 [connection signal="pressed" from="Button13" to="." method="_on_Button13_pressed"]
 [connection signal="pressed" from="Button18" to="." method="_on_Button18_pressed"]
-[connection signal="pressed" from="Button39" to="." method="_on_Button39_pressed"]
 [connection signal="pressed" from="Button23" to="." method="_on_Button23_pressed"]
 [connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
-[connection signal="pressed" from="Button28" to="." method="_on_Button28_pressed"]
-[connection signal="pressed" from="Button33" to="." method="_on_Button33_pressed"]
-[connection signal="pressed" from="Button38" to="." method="_on_Button38_pressed"]
-[connection signal="pressed" from="Button43" to="." method="_on_Button43_pressed"]
-[connection signal="pressed" from="Button48" to="." method="_on_Button48_pressed"]
-[connection signal="pressed" from="Button9" to="." method="_on_Button9_pressed"]
-[connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]
-[connection signal="pressed" from="Button19" to="." method="_on_Button19_pressed"]
-[connection signal="pressed" from="Button24" to="." method="_on_Button24_pressed"]
 [connection signal="pressed" from="Button29" to="." method="_on_Button29_pressed"]
 [connection signal="pressed" from="Button34" to="." method="_on_Button34_pressed"]
+[connection signal="pressed" from="Button39" to="." method="_on_Button39_pressed"]
 [connection signal="pressed" from="Button44" to="." method="_on_Button44_pressed"]
 [connection signal="pressed" from="Button49" to="." method="_on_Button49_pressed"]
 [connection signal="pressed" from="Button10" to="." method="_on_Button10_pressed"]
-[connection signal="pressed" from="Button20" to="." method="_on_Button20_pressed"]
 [connection signal="pressed" from="Button15" to="." method="_on_Button15_pressed"]
+[connection signal="pressed" from="Button20" to="." method="_on_Button20_pressed"]
 [connection signal="pressed" from="Button25" to="." method="_on_Button25_pressed"]
