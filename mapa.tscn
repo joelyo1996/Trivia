@@ -1,11 +1,27 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://mapa.gd" type="Script" id=1]
 [ext_resource path="res://asset/musica/mapamundi.ogg" type="AudioStream" id=2]
 [ext_resource path="res://maga.tscn" type="PackedScene" id=3]
 [ext_resource path="res://guerrero.tscn" type="PackedScene" id=4]
+[ext_resource path="res://asset/Imagenes/caballero.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Nueva animación"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.0246715 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -44,4 +60,12 @@ position = Vector2( 417.911, 468.261 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 649.524, 468.261 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Nueva animación" = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 518.612, 229.096 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 5 )
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

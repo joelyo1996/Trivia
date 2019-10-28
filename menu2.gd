@@ -16,14 +16,17 @@ func _ready():
 
 
 func _on_Button_pressed():
+	print("hola")
+	$Nodo2D.personaje1()
 	get_tree().change_scene("res://mapa.tscn")
 	personaje=1
-	emit_signal("personaje1")
+	
 	pass # Replace with function body.
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://mapa.tscn")
 	emit_signal("personaje2")
+	get_tree().change_scene("res://mapa.tscn")
+	
 	personaje=2
 	pass # Replace with function body.
