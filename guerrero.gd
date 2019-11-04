@@ -1,5 +1,6 @@
 extends Node2D
-
+signal personaje1()
+signal guerrero()
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -9,6 +10,7 @@ func _ready():
 	#personaje.connect("personaje1", self, "personaje")
 	pass # Replace with function body.
 func personaje1():
+	
 	$AnimationPlayer.play("guerrero")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,5 +20,7 @@ func personaje1():
 
 func _on_menu2_personaje1():
 	print("hola")
-	$AnimationPlayer.play("guerrero")
+	$Sprite.queue_free()
+	emit_signal("guerrero")
+	#$AnimationPlayer.play("guerrero")
 	pass # Replace with function body.

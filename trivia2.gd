@@ -1,7 +1,7 @@
 extends Node2D
 
 # Declare member variables here. Examples:
-# var a = 2
+var correcta =0
 # var b = "text"
 
 # Called when the node enters the scene tree for the first time.
@@ -11,7 +11,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
+func _process(delta):
+	$Label.text="correctas "+ str(correcta)
 
 func _on_Button2_pressed():
 	$Button.queue_free()
@@ -74,6 +75,7 @@ func _on_Button24_pressed():
 	$Button15.queue_free()
 	$Button24.queue_free()
 	$Button33.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -90,6 +92,7 @@ func _on_Button34_pressed():
 	$Button16.queue_free()
 	$Button25.queue_free()
 	$Button34.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -122,6 +125,7 @@ func _on_Button26_pressed():
 	$Button17.queue_free()
 	$Button26.queue_free()
 	$Button35.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -146,6 +150,7 @@ func _on_Button27_pressed():
 	$Button18.queue_free()
 	$Button27.queue_free()
 	$Button36.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -162,6 +167,7 @@ func _on_Button19_pressed():
 	$Button19.queue_free()
 	$Button28.queue_free()
 	$Button37.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -202,6 +208,7 @@ func _on_Button20_pressed():
 	$Button20.queue_free()
 	$Button29.queue_free()
 	$Button38.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -210,6 +217,7 @@ func _on_Button21_pressed():
 	$Button21.queue_free()
 	$Button30.queue_free()
 	$Button39.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -242,6 +250,7 @@ func _on_Button31_pressed():
 	$Button22.queue_free()
 	$Button31.queue_free()
 	$Button40.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -250,4 +259,9 @@ func _on_Button22_pressed():
 	$Button22.queue_free()
 	$Button31.queue_free()
 	$Button40.queue_free()
+	pass # Replace with function body.
+
+
+func _on_atras_pressed():
+	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

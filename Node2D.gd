@@ -17,7 +17,8 @@ func _on_Node2D_tree_entered():
 	$AnimationPlayer.play("anim")
 	pass # Replace with function body.
 
-
+func personaje1():
+	$AnimationPlayer.play("anim")
 
 		
 	# Replace with function body.

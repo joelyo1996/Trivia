@@ -395,3 +395,8 @@ func _on_Button49_pressed():
 	$Button49.queue_free()
 	$Button50.queue_free()
 	pass # Replace with function body.
+
+
+func _on_atras_pressed():
+	get_tree().change_scene("res://mapa.tscn")
+	pass # Replace with function body.

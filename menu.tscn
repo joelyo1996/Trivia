@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/9501281d.jpg" type="Texture" id=2]
@@ -6,9 +6,10 @@
 [ext_resource path="res://asset/Imagenes/boton muchoca2.png" type="Texture" id=4]
 [ext_resource path="res://asset/Imagenes/Quincho Games.png" type="Texture" id=5]
 [ext_resource path="res://asset/Imagenes/creditos.jpeg" type="Texture" id=6]
-[ext_resource path="res://asset/Imagenes/play1.jpeg" type="Texture" id=7]
-[ext_resource path="res://asset/musica/sonido de start.ogg" type="AudioStream" id=8]
-[ext_resource path="res://asset/Imagenes/boton muchoca3.png" type="Texture" id=9]
+[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=7]
+[ext_resource path="res://asset/Imagenes/play1.jpeg" type="Texture" id=8]
+[ext_resource path="res://asset/musica/sonido de start.ogg" type="AudioStream" id=9]
+[ext_resource path="res://asset/Imagenes/boton muchoca3.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=1]
 resource_name = "boton_creditos_open"
@@ -207,21 +208,23 @@ margin_bottom = 312.212
 text = "Salir de creditos"
 
 [node name="Salir" type="Button" parent="."]
-margin_left = 290.255
-margin_top = -264.931
-margin_right = 490.255
-margin_bottom = -164.931
+margin_left = 396.0
+margin_top = -260.574
+margin_right = 1284.99
+margin_bottom = 689.0
+rect_scale = Vector2( 0.1, 0.1 )
 text = "Salir"
+icon = ExtResource( 7 )
 
 [node name="play2" type="Button" parent="."]
 margin_left = -204.494
 margin_top = -51.7978
 margin_right = 170.506
 margin_bottom = 93.2022
-icon = ExtResource( 7 )
+icon = ExtResource( 8 )
 
 [node name="Audioplay" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 9 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
 anims/silencio = SubResource( 4 )
@@ -229,7 +232,7 @@ anims/silencio = SubResource( 4 )
 [node name="silencio2" type="Sprite" parent="."]
 position = Vector2( -469.313, -227.171 )
 scale = Vector2( 0.140513, 0.111718 )
-texture = ExtResource( 9 )
+texture = ExtResource( 10 )
 [connection signal="pressed" from="silencio" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="quincho" to="." method="_on_quincho_pressed"]
 [connection signal="pressed" from="creditos" to="." method="_on_creditos_pressed"]

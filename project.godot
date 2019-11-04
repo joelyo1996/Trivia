@@ -19,6 +19,10 @@ config/name="trivia"
 run/main_scene="res://inicio.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+new_script="*res://new_script.gd"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

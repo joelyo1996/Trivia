@@ -1,9 +1,10 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://trivia1.gd" type="Script" id=1]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://maga.tscn" type="PackedScene" id=3]
 [ext_resource path="res://guerrero.tscn" type="PackedScene" id=4]
+[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://Fuente/kenvector_future.ttf"
@@ -112,25 +113,25 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=35]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFontData" id=37]
+[sub_resource type="DynamicFontData" id=36]
 font_path = "res://Fuente/kenvector_future.ttf"
 
-[sub_resource type="DynamicFont" id=38]
-font_data = SubResource( 37 )
+[sub_resource type="DynamicFont" id=37]
+font_data = SubResource( 36 )
 
-[sub_resource type="DynamicFontData" id=39]
+[sub_resource type="DynamicFontData" id=38]
 font_path = "res://Fuente/kenvector_future.ttf"
+
+[sub_resource type="DynamicFont" id=39]
+font_data = SubResource( 38 )
 
 [sub_resource type="DynamicFont" id=40]
-font_data = SubResource( 39 )
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=41]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=42]
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=36]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=43]
@@ -142,10 +143,10 @@ font_data = ExtResource( 2 )
 [sub_resource type="DynamicFont" id=45]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=47]
+[sub_resource type="DynamicFont" id=46]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=46]
+[sub_resource type="DynamicFont" id=47]
 font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=48]
@@ -409,7 +410,7 @@ margin_top = 357.0
 margin_right = 1012.0
 margin_bottom = 421.0
 rect_pivot_offset = Vector2( 58.417, 15.9 )
-custom_fonts/font = SubResource( 38 )
+custom_fonts/font = SubResource( 37 )
 text = "Representación gráfica del sistema digestivo."
 
 [node name="Button4" type="Button" parent="."]
@@ -417,7 +418,7 @@ margin_left = 441.0
 margin_top = 438.0
 margin_right = 1014.0
 margin_bottom = 488.0
-custom_fonts/font = SubResource( 40 )
+custom_fonts/font = SubResource( 39 )
 text = "Un mensaje codificado."
 
 [node name="Button29" type="Button" parent="."]
@@ -425,7 +426,7 @@ margin_left = 441.0
 margin_top = 443.0
 margin_right = 1016.0
 margin_bottom = 493.0
-custom_fonts/font = SubResource( 41 )
+custom_fonts/font = SubResource( 40 )
 text = "Videoclips."
 
 [node name="Button34" type="Button" parent="."]
@@ -433,7 +434,7 @@ margin_left = 441.0
 margin_top = 436.0
 margin_right = 1011.0
 margin_bottom = 493.0
-custom_fonts/font = SubResource( 42 )
+custom_fonts/font = SubResource( 41 )
 text = "No se programa."
 
 [node name="Button39" type="Button" parent="."]
@@ -441,7 +442,7 @@ margin_left = 431.522
 margin_top = 432.874
 margin_right = 1021.52
 margin_bottom = 496.874
-custom_fonts/font = SubResource( 36 )
+custom_fonts/font = SubResource( 42 )
 text = "herramientas de soft con propósitos específicos"
 
 [node name="Button44" type="Button" parent="."]
@@ -473,7 +474,7 @@ margin_left = 439.0
 margin_top = 439.0
 margin_right = 1015.0
 margin_bottom = 489.0
-custom_fonts/font = SubResource( 47 )
+custom_fonts/font = SubResource( 46 )
 text = "Es una computadora para hacer videojuegos"
 
 [node name="Button20" type="Button" parent="."]
@@ -481,7 +482,7 @@ margin_left = 436.0
 margin_top = 436.0
 margin_right = 1012.0
 margin_bottom = 486.0
-custom_fonts/font = SubResource( 46 )
+custom_fonts/font = SubResource( 47 )
 text = "Capas independientes y reutilizables."
 
 [node name="Button25" type="Button" parent="."]
@@ -507,6 +508,14 @@ position = Vector2( 420.886, 208.773 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/guerrero = SubResource( 49 )
+
+[node name="atras" type="Button" parent="."]
+margin_left = -4.83472
+margin_top = 494.814
+margin_right = 851.165
+margin_bottom = 1455.81
+rect_scale = Vector2( 0.1, 0.1 )
+icon = ExtResource( 5 )
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button27" to="." method="_on_Button27_pressed"]
 [connection signal="pressed" from="Button32" to="." method="_on_Button32_pressed"]
@@ -537,3 +546,4 @@ anims/guerrero = SubResource( 49 )
 [connection signal="pressed" from="Button15" to="." method="_on_Button15_pressed"]
 [connection signal="pressed" from="Button20" to="." method="_on_Button20_pressed"]
 [connection signal="pressed" from="Button25" to="." method="_on_Button25_pressed"]
+[connection signal="pressed" from="atras" to="." method="_on_atras_pressed"]

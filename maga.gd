@@ -1,6 +1,6 @@
 extends Node2D
-
-# Declare member variables here. Examples:
+signal personaje2()
+signal maga()# Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
@@ -12,3 +12,9 @@ func personaje2():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_menu2_personaje2():
+	$Sprite.queue_free()
+	emit_signal("maga")
+	pass # Replace with function body.
