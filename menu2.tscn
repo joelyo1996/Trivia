@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://menu2.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/fonto_titulo.jpg" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://guerrero.tscn" type="PackedScene" id=5]
 [ext_resource path="res://maga.tscn" type="PackedScene" id=6]
 [ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=7]
+[ext_resource path="res://asset/musica/menu.ogg" type="AudioStream" id=8]
 
 [node name="menu2" type="Node2D"]
 script = ExtResource( 1 )
@@ -49,6 +50,9 @@ margin_left = 479.09
 margin_top = 442.646
 margin_right = 648.09
 margin_bottom = 603.646
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 8 )
 [connection signal="personaje1" from="." to="Node2D" method="_on_menu2_personaje1"]
 [connection signal="personaje2" from="." to="Node2D2" method="_on_menu2_personaje2"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -13,6 +13,8 @@ func _ready():
 		remove_child($Node2D)
 	else:
  		remove_child($Node2D2)
+	if(new_script.correctatotal == 24):
+		get_tree().change_scene("res://ganaste.tscn")
 	
  # Replace with function body.
 

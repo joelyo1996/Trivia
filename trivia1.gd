@@ -3,10 +3,14 @@ extends Node2D
 # Declare member variables here. Examples:
 var correcta = 0
 var b = "text"
-
+var corractotal= new_script.correctatotal
 # Called when the node enters the scene tree for the first time.
 func _ready():
-
+	
+	if(new_script.pj =="mago"):
+		remove_child($Node2D)
+	else:
+ 		remove_child($Node2D2)
 	pass # Replace with function body.
 func personaje1():
 	$AnimationPlayer.play("guerrero")
@@ -77,6 +81,7 @@ func _on_Button8_pressed():
 	$Button8.queue_free()
 	
 	$Button10.queue_free()
+	
 	correcta = correcta+1
 	pass # Replace with function body.
 
@@ -114,6 +119,8 @@ func _on_Button13_pressed():
 	$Button13.queue_free()
 	
 	$Button15.queue_free()
+	
+	correcta= correcta +1
 	pass # Replace with function body.
 
 
@@ -123,7 +130,7 @@ func _on_Button14_pressed():
 	$Button13.queue_free()
 	
 	$Button15.queue_free()
-	correcta= correcta +1
+	
 	pass # Replace with function body.
 
 
@@ -169,6 +176,7 @@ func _on_Button20_pressed():
 	$Button18.queue_free()
 	
 	$Button20.queue_free()
+	
 	correcta= correcta +1
 	pass # Replace with function body.
 
@@ -216,6 +224,7 @@ func _on_Button27_pressed():
 	
 	$Button29.queue_free()
 	$Button30.queue_free()
+	
 	correcta= correcta +1
 	pass # Replace with function body.
 
@@ -263,6 +272,7 @@ func _on_Button31_pressed():
 	
 	$Button34.queue_free()
 	$Button35.queue_free()
+	
 	correcta= correcta +1
 	pass # Replace with function body.
 
@@ -300,6 +310,8 @@ func _on_Button36_pressed():
 	
 	$Button39.queue_free()
 	$Button40.queue_free()
+	
+	correcta= correcta +1
 	pass # Replace with function body.
 
 
@@ -319,7 +331,7 @@ func _on_Button39_pressed():
 	
 	$Button39.queue_free()
 	$Button40.queue_free()
-	correcta= correcta +1
+	
 	pass # Replace with function body.
 
 
@@ -356,6 +368,7 @@ func _on_Button44_pressed():
 	
 	$Button44.queue_free()
 	$Button45.queue_free()
+	
 	correcta= correcta +1
 	pass # Replace with function body.
 
@@ -366,6 +379,7 @@ func _on_Button47_pressed():
 	
 	$Button49.queue_free()
 	$Button50.queue_free()
+	
 	correcta= correcta +1
 	pass # Replace with function body.
 
@@ -398,5 +412,7 @@ func _on_Button49_pressed():
 
 
 func _on_atras_pressed():
+		
+	
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.
