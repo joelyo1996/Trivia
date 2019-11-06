@@ -3,7 +3,8 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
+var correcta=0
+var correctatotal=0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
@@ -17,7 +18,9 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
+func _process(delta):
+	$Label.text="correctas "+ str(correcta)
+	
 func _on_Button11_pressed():
 	$Button.queue_free()
 	$Button11.queue_free()
@@ -71,6 +74,8 @@ func _on_Button13_pressed():
 	$Button13.queue_free()
 	$Button23.queue_free()
 	$Button33.queue_free()
+	correcta = correcta + 1
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -79,6 +84,7 @@ func _on_Button23_pressed():
 	$Button13.queue_free()
 	$Button23.queue_free()
 	$Button33.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -87,6 +93,7 @@ func _on_Button33_pressed():
 	$Button13.queue_free()
 	$Button23.queue_free()
 	$Button33.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -111,6 +118,7 @@ func _on_Button14_pressed():
 	$Button14.queue_free()
 	$Button24.queue_free()
 	$Button34.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
@@ -119,6 +127,7 @@ func _on_Button15_pressed():
 	$Button15.queue_free()
 	$Button25.queue_free()
 	$Button35.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -127,6 +136,7 @@ func _on_Button25_pressed():
 	$Button15.queue_free()
 	$Button25.queue_free()
 	$Button35.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
@@ -159,6 +169,7 @@ func _on_Button16_pressed():
 	$Button16.queue_free()
 	$Button26.queue_free()
 	$Button36.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
@@ -167,6 +178,7 @@ func _on_Button17_pressed():
 	$Button17.queue_free()
 	$Button27.queue_free()
 	$Button37.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -183,6 +195,7 @@ func _on_Button37_pressed():
 	$Button17.queue_free()
 	$Button27.queue_free()
 	$Button37.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
@@ -207,6 +220,7 @@ func _on_Button18_pressed():
 	$Button18.queue_free()
 	$Button28.queue_free()
 	$Button38.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
@@ -223,6 +237,7 @@ func _on_Button29_pressed():
 	$Button19.queue_free()
 	$Button29.queue_free()
 	$Button39.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 
@@ -255,9 +270,11 @@ func _on_Button20_pressed():
 	$Button20.queue_free()
 	$Button30.queue_free()
 	$Button40.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
 func _on_atras_pressed():
+	new_script.trivia4 =+ correctatotal
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

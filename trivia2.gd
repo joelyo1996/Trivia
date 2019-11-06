@@ -2,6 +2,7 @@ extends Node2D
 
 # Declare member variables here. Examples:
 var correcta =0
+var correctatotal=0
 # var b = "text"
 
 # Called when the node enters the scene tree for the first time.
@@ -22,6 +23,7 @@ func _on_Button2_pressed():
 	$Button2.queue_free()
 	$Button3.queue_free()
 	$Button4.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -30,6 +32,7 @@ func _on_Button3_pressed():
 	$Button2.queue_free()
 	$Button3.queue_free()
 	$Button4.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -38,6 +41,7 @@ func _on_Button4_pressed():
 	$Button2.queue_free()
 	$Button3.queue_free()
 	$Button4.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -70,6 +74,7 @@ func _on_Button15_pressed():
 	$Button15.queue_free()
 	$Button24.queue_free()
 	$Button33.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -78,7 +83,7 @@ func _on_Button24_pressed():
 	$Button15.queue_free()
 	$Button24.queue_free()
 	$Button33.queue_free()
-	
+	correctatotal = correcta
 	correcta=correcta+1
 	pass # Replace with function body.
 
@@ -88,6 +93,7 @@ func _on_Button33_pressed():
 	$Button15.queue_free()
 	$Button24.queue_free()
 	$Button33.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -274,5 +280,6 @@ func _on_Button22_pressed():
 
 
 func _on_atras_pressed():
+	new_script.trivia2 =+ correctatotal
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

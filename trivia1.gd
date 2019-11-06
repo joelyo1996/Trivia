@@ -413,6 +413,6 @@ func _on_Button49_pressed():
 
 func _on_atras_pressed():
 		
-	
+	new_script.trivia1 =+ correcta
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

@@ -9,6 +9,8 @@ signal guerrero()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	new_script.correctatotal = new_script.trivia1 +new_script.trivia2 +new_script.trivia3 +new_script.trivia4
+	print(new_script.correctatotal)
 	if(new_script.pj =="mago"):
 		remove_child($Node2D)
 	else:

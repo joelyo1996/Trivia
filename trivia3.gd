@@ -3,7 +3,8 @@ extends Node2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
+var correcta=0
+var correctatotal=0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if(new_script.pj =="mago"):
@@ -16,6 +17,7 @@ func _ready():
 
 
 func _on_atras_pressed():
+	new_script.trivia3 =+ correctatotal
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.
 
@@ -242,6 +244,7 @@ func _on_Button31_pressed():
 	$Button11.queue_free()
 	$Button21.queue_free()
 	$Button31.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -250,6 +253,7 @@ func _on_Button21_pressed():
 	$Button11.queue_free()
 	$Button21.queue_free()
 	$Button31.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
 
 
@@ -258,4 +262,5 @@ func _on_Button11_pressed():
 	$Button11.queue_free()
 	$Button21.queue_free()
 	$Button31.queue_free()
+	correctatotal = correcta
 	pass # Replace with function body.
