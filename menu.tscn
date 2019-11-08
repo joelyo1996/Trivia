@@ -7,7 +7,7 @@
 [ext_resource path="res://asset/Imagenes/Quincho Games.png" type="Texture" id=5]
 [ext_resource path="res://asset/Imagenes/creditos.jpeg" type="Texture" id=6]
 [ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=7]
-[ext_resource path="res://asset/Imagenes/play1.jpeg" type="Texture" id=8]
+[ext_resource path="res://asset/Imagenes/plau.png" type="Texture" id=8]
 [ext_resource path="res://asset/musica/sonido de start.ogg" type="AudioStream" id=9]
 [ext_resource path="res://asset/Imagenes/boton muchoca3.png" type="Texture" id=10]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=11]
@@ -204,20 +204,20 @@ rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 4 )
 
 [node name="quincho" type="Button" parent="."]
-margin_left = 119.42
-margin_top = 200.508
-margin_right = 2290.42
-margin_bottom = 1172.51
-rect_scale = Vector2( 0.17, 0.14 )
+margin_left = 285.492
+margin_top = 228.487
+margin_right = 2413.49
+margin_bottom = 1200.49
+rect_scale = Vector2( 0.095, 0.11 )
 text = "Quincho"
 icon = ExtResource( 5 )
 
 [node name="creditos" type="Button" parent="."]
-margin_left = -536.642
-margin_top = 203.019
-margin_right = -239.642
-margin_bottom = 396.019
-rect_scale = Vector2( 1.25, 0.7 )
+margin_left = -537.595
+margin_top = 231.797
+margin_right = -240.595
+margin_bottom = 424.797
+rect_scale = Vector2( 0.68, 0.55 )
 icon = ExtResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -235,10 +235,11 @@ text = "Salir"
 icon = ExtResource( 7 )
 
 [node name="play" type="Button" parent="."]
-margin_left = -204.482
-margin_top = -82.3233
-margin_right = 170.518
-margin_bottom = 62.6767
+margin_left = -126.0
+margin_top = -52.0
+margin_right = 1886.0
+margin_bottom = 1018.0
+rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 8 )
 
 [node name="Audioplay" type="AudioStreamPlayer" parent="."]
@@ -249,23 +250,23 @@ anims/silencio = SubResource( 4 )
 
 [node name="silencio2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -469.313, -227.171 )
-scale = Vector2( 0.140513, 0.111718 )
+position = Vector2( -470.106, -227.171 )
+scale = Vector2( 0.138902, 0.111718 )
 texture = ExtResource( 10 )
 
 [node name="Button" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 168.0
-margin_top = -106.0
-margin_right = 486.0
-margin_bottom = 188.0
+margin_left = 169.108
+margin_top = -99.7432
+margin_right = 487.108
+margin_bottom = 194.257
 
 [node name="Label" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 230.202
-margin_top = -89.8002
-margin_right = 474.202
-margin_bottom = 127.2
+margin_left = 222.446
+margin_top = -84.26
+margin_right = 466.446
+margin_bottom = 132.74
 custom_fonts/font = SubResource( 5 )
 text = "Game design:
 Artistas:

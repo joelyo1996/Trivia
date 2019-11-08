@@ -1,11 +1,112 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://trivia3.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/torre.png" type="Texture" id=2]
-[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=3]
-[ext_resource path="res://asset/musica/jefe3.ogg" type="AudioStream" id=4]
-[ext_resource path="res://maga.tscn" type="PackedScene" id=5]
-[ext_resource path="res://guerrero.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=4]
+[ext_resource path="res://asset/musica/jefe3.ogg" type="AudioStream" id=5]
+[ext_resource path="res://maga.tscn" type="PackedScene" id=6]
+[ext_resource path="res://guerrero.tscn" type="PackedScene" id=7]
+
+[sub_resource type="DynamicFont" id=17]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=18]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=19]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=20]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=21]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=22]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=23]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=24]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 14
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=25]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=26]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=27]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=28]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=10]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=12]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=29]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=30]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=31]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=32]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=13]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=14]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=15]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=16]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=33]
+font_data = ExtResource( 3 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -15,251 +116,276 @@ position = Vector2( 512.018, 300.873 )
 scale = Vector2( 0.256773, 0.148725 )
 texture = ExtResource( 2 )
 
-[node name="Button" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
-
-[node name="Button2" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+[node name="Button11" type="Button" parent="."]
+margin_left = 467.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 17 )
+text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
 
 [node name="Button3" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 467.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 17 )
+text = "Nombre del primer Videojuego de Atari."
 
 [node name="Button4" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 464.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 18 )
+text = "En 2017 se sancionó la Ley Nacional de Videojuegos."
 
 [node name="Button5" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 468.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 19 )
+text = "El desafío es convertirse en creadores de IP"
 
 [node name="Button6" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 472.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 20 )
+text = "El Sector tiene la oportunidad de dar un salto."
 
 [node name="Button7" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 485.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 1 )
+text = "La industria de los VJ factura más que el cine."
 
 [node name="Button8" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 485.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 2 )
+text = "¿Qué es el MICA?"
 
 [node name="Button9" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
+margin_left = 481.0
+margin_top = 12.0
+margin_right = 1019.0
+margin_bottom = 156.0
+custom_fonts/font = SubResource( 3 )
+text = "En Argentina, todavía es una industria joven."
 
 [node name="Button10" type="Button" parent="."]
-margin_left = 571.203
-margin_top = 11.6913
-margin_right = 1019.2
-margin_bottom = 155.691
-
-[node name="Button11" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 234.0
-margin_right = 1020.0
-margin_bottom = 301.0
-
-[node name="Button12" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 234.0
-margin_right = 1020.0
-margin_bottom = 301.0
+margin_left = 469.0
+margin_top = 13.0
+margin_right = 1024.0
+margin_bottom = 157.0
+custom_fonts/font = SubResource( 4 )
+text = "Los VJ son una industria creativa en Argentina"
 
 [node name="Button13" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 468.0
 margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 21 )
+text = "Pacman"
 
 [node name="Button14" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 468.0
 margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 22 )
+text = "Falso"
 
 [node name="Button15" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 468.0
 margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 23 )
+text = "Afirma APTRA"
 
 [node name="Button16" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 468.0
 margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 24 )
+text = "Puede convertirse en proveedor para el exterior."
 
 [node name="Button17" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 467.112
 margin_top = 234.0
-margin_right = 1020.0
+margin_right = 1027.11
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 5 )
+text = "Facturan más de 500 millones de dólares anuales"
 
 [node name="Button18" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 480.0
 margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 6 )
+text = "Mercado de Industrias Creativas Argentinas"
 
 [node name="Button19" type="Button" parent="."]
-margin_left = 570.0
+margin_left = 482.0
 margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
+custom_fonts/font = SubResource( 7 )
+text = "No hay industria en Argentina"
 
 [node name="Button20" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 234.0
-margin_right = 1020.0
-margin_bottom = 301.0
-
-[node name="Button21" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
-margin_right = 1020.0
-margin_bottom = 431.274
-
-[node name="Button22" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
-margin_right = 1020.0
-margin_bottom = 431.274
+margin_left = 468.0
+margin_top = 236.0
+margin_right = 1026.0
+margin_bottom = 303.0
+custom_fonts/font = SubResource( 8 )
+text = "Si. Pertenecen al Mercado de Industrias Culturales."
 
 [node name="Button23" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 468.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 25 )
+text = "Pong"
 
 [node name="Button24" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 471.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 26 )
+text = "Se presentó el proyecto de Ley."
 
 [node name="Button25" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 468.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 27 )
+text = "Sugiere FUNDAV"
 
 [node name="Button26" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 468.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 28 )
+text = "Porque el 95% de lo que se desarrolla se exporta."
 
 [node name="Button27" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 471.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 9 )
+text = "Es una industria incipiente con poca facturación."
 
 [node name="Button28" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 484.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 10 )
+text = "Monitor de Ingenieros Creativos Argentinos"
 
 [node name="Button29" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 482.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 11 )
+text = "El 2000 es considerado el punto de partida."
 
 [node name="Button30" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 364.274
+margin_left = 470.0
+margin_top = 364.0
 margin_right = 1020.0
-margin_bottom = 431.274
-
-[node name="Button31" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
-
-[node name="Button32" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_bottom = 431.0
+custom_fonts/font = SubResource( 12 )
+text = "No son objetos industriales."
 
 [node name="Button33" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 466.0
+margin_top = 486.0
+margin_right = 1022.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 29 )
+text = "Circus"
 
 [node name="Button34" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 466.0
+margin_top = 486.0
+margin_right = 1022.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 30 )
+text = "Verdadero."
 
 [node name="Button35" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 467.0
+margin_top = 486.0
+margin_right = 1022.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 31 )
+text = "Pregona CONEAU"
 
 [node name="Button36" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 471.0
+margin_top = 486.0
+margin_right = 1021.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 32 )
+text = "Porque las dos anteriores son reales."
 
 [node name="Button37" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 469.0
+margin_top = 486.0
+margin_right = 1022.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 13 )
+text = "Los videojuegos son los socios menores del cine."
 
 [node name="Button38" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 481.0
+margin_top = 486.0
+margin_right = 1021.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 14 )
+text = "Manual de Industrias de Creaciones Artísticas."
 
 [node name="Button39" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 479.0
+margin_top = 486.0
+margin_right = 1021.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 15 )
+text = "La industria se consolidó en la década del 90."
 
 [node name="Button40" type="Button" parent="."]
-margin_left = 571.67
-margin_top = 486.198
-margin_right = 1021.67
-margin_bottom = 553.198
+margin_left = 469.0
+margin_top = 486.0
+margin_right = 1022.0
+margin_bottom = 553.0
+custom_fonts/font = SubResource( 16 )
+text = "Son considerados artesanías digitales."
 
 [node name="Label" type="Label" parent="."]
-margin_left = 429.237
-margin_top = 18.372
-margin_right = 486.237
-margin_bottom = 72.372
+margin_left = 68.0
+margin_top = 17.0
+margin_right = 178.0
+margin_bottom = 71.0
+custom_fonts/font = SubResource( 33 )
 
 [node name="atras" type="Button" parent="."]
 margin_left = 1.67017
@@ -267,19 +393,17 @@ margin_top = 496.044
 margin_right = 857.67
 margin_bottom = 1457.04
 rect_scale = Vector2( 0.1, 0.1 )
-icon = ExtResource( 3 )
+icon = ExtResource( 4 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 4 )
+stream = ExtResource( 5 )
 autoplay = true
 
-[node name="Node2D" parent="." instance=ExtResource( 5 )]
+[node name="Node2D" parent="." instance=ExtResource( 6 )]
 position = Vector2( 395.833, 449.279 )
 
-[node name="Node2D2" parent="." instance=ExtResource( 6 )]
+[node name="Node2D2" parent="." instance=ExtResource( 7 )]
 position = Vector2( 379.131, 457.63 )
-[connection signal="pressed" from="Button11" to="." method="_on_Button11_pressed"]
-[connection signal="pressed" from="Button12" to="." method="_on_Button12_pressed"]
 [connection signal="pressed" from="Button13" to="." method="_on_Button13_pressed"]
 [connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]
 [connection signal="pressed" from="Button15" to="." method="_on_Button15_pressed"]
@@ -288,8 +412,6 @@ position = Vector2( 379.131, 457.63 )
 [connection signal="pressed" from="Button18" to="." method="_on_Button18_pressed"]
 [connection signal="pressed" from="Button19" to="." method="_on_Button19_pressed"]
 [connection signal="pressed" from="Button20" to="." method="_on_Button20_pressed"]
-[connection signal="pressed" from="Button21" to="." method="_on_Button21_pressed"]
-[connection signal="pressed" from="Button22" to="." method="_on_Button22_pressed"]
 [connection signal="pressed" from="Button23" to="." method="_on_Button23_pressed"]
 [connection signal="pressed" from="Button24" to="." method="_on_Button24_pressed"]
 [connection signal="pressed" from="Button25" to="." method="_on_Button25_pressed"]
@@ -298,8 +420,6 @@ position = Vector2( 379.131, 457.63 )
 [connection signal="pressed" from="Button28" to="." method="_on_Button28_pressed"]
 [connection signal="pressed" from="Button29" to="." method="_on_Button29_pressed"]
 [connection signal="pressed" from="Button30" to="." method="_on_Button30_pressed"]
-[connection signal="pressed" from="Button31" to="." method="_on_Button31_pressed"]
-[connection signal="pressed" from="Button32" to="." method="_on_Button32_pressed"]
 [connection signal="pressed" from="Button33" to="." method="_on_Button33_pressed"]
 [connection signal="pressed" from="Button34" to="." method="_on_Button34_pressed"]
 [connection signal="pressed" from="Button35" to="." method="_on_Button35_pressed"]

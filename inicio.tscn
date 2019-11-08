@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/carte.png" type="Texture" id=2]
-[ext_resource path="res://asset/Imagenes/Sin título.png" type="Texture" id=3]
-[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://asset/Imagenes/ea68e2acd9f95ec64bc257925b317427.png" type="Texture" id=3]
+[ext_resource path="res://asset/Imagenes/logo.png" type="Texture" id=4]
 [ext_resource path="res://asset/Imagenes/Quincho Games.png" type="Texture" id=5]
 
 [sub_resource type="Animation" id=1]
@@ -56,19 +56,21 @@ texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 256.842, 111.474 )
+position = Vector2( 330.905, 263.909 )
+scale = Vector2( 0.675204, 0.504275 )
 texture = ExtResource( 3 )
 offset = Vector2( 270, 60 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 179, 278 )
+position = Vector2( 494.594, 281.254 )
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 4 )
 offset = Vector2( 270, 60 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 370.607, 255.789 )
+position = Vector2( 375.769, 291.925 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 5 )
 offset = Vector2( 270, 60 )

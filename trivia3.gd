@@ -17,17 +17,19 @@ func _ready():
 
 
 func _on_atras_pressed():
-	new_script.trivia3 =+ correctatotal
+	new_script.trivia3 =+ correcta
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.
 
-
+func _process(delta):
+	$Label.text="correctas "+ str(correcta)
 
 func _on_Button20_pressed():
 	$Button10.queue_free()
 	$Button20.queue_free()
 	$Button30.queue_free()
 	$Button40.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -60,6 +62,7 @@ func _on_Button29_pressed():
 	$Button19.queue_free()
 	$Button29.queue_free()
 	$Button39.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -76,6 +79,7 @@ func _on_Button18_pressed():
 	$Button18.queue_free()
 	$Button28.queue_free()
 	$Button38.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -116,6 +120,7 @@ func _on_Button17_pressed():
 	$Button17.queue_free()
 	$Button27.queue_free()
 	$Button37.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -140,6 +145,7 @@ func _on_Button36_pressed():
 	$Button16.queue_free()
 	$Button26.queue_free()
 	$Button36.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -148,6 +154,7 @@ func _on_Button35_pressed():
 	$Button15.queue_free()
 	$Button25.queue_free()
 	$Button35.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -156,6 +163,7 @@ func _on_Button25_pressed():
 	$Button15.queue_free()
 	$Button25.queue_free()
 	$Button35.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -172,6 +180,7 @@ func _on_Button14_pressed():
 	$Button14.queue_free()
 	$Button24.queue_free()
 	$Button34.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -180,6 +189,7 @@ func _on_Button24_pressed():
 	$Button14.queue_free()
 	$Button24.queue_free()
 	$Button34.queue_free()
+	
 	pass # Replace with function body.
 
 
@@ -204,6 +214,7 @@ func _on_Button23_pressed():
 	$Button13.queue_free()
 	$Button23.queue_free()
 	$Button33.queue_free()
+	correcta = correcta +1
 	pass # Replace with function body.
 
 
@@ -212,6 +223,7 @@ func _on_Button13_pressed():
 	$Button13.queue_free()
 	$Button23.queue_free()
 	$Button33.queue_free()
+	
 	pass # Replace with function body.
 
 

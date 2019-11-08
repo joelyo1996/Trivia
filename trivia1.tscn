@@ -181,35 +181,43 @@ position = Vector2( 509.424, 299.969 )
 scale = Vector2( 0.253622, 0.281096 )
 texture = ExtResource( 2 )
 
+[node name="Button33" type="Button" parent="."]
+margin_left = 464.0
+margin_top = 95.0
+margin_right = 1023.0
+margin_bottom = 251.0
+custom_fonts/font = SubResource( 1 )
+text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
+
 [node name="Button30" type="Button" parent="."]
 margin_left = 464.0
 margin_top = 95.0
 margin_right = 1023.0
-margin_bottom = 245.0
+margin_bottom = 251.0
 custom_fonts/font = SubResource( 1 )
 text = "Twine es una herramienta que sirve para crear"
 
 [node name="Button35" type="Button" parent="."]
-margin_left = 461.785
-margin_top = 98.3509
-margin_right = 1024.79
-margin_bottom = 248.351
+margin_left = 462.0
+margin_top = 95.0
+margin_right = 1025.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 2 )
 text = "Construct es un motor  de VJ el cual se programa por…"
 
 [node name="Button40" type="Button" parent="."]
 margin_left = 464.0
-margin_top = 97.0
+margin_top = 96.0
 margin_right = 1021.0
-margin_bottom = 247.0
+margin_bottom = 252.0
 custom_fonts/font = SubResource( 3 )
 text = "Que es un SDK?"
 
 [node name="Button45" type="Button" parent="."]
-margin_left = 469.0
+margin_left = 462.0
 margin_top = 97.0
 margin_right = 1018.0
-margin_bottom = 247.0
+margin_bottom = 252.0
 custom_fonts/font = SubResource( 4 )
 text = "Que es el brainstorming?"
 
@@ -217,20 +225,20 @@ text = "Que es el brainstorming?"
 margin_left = 463.0
 margin_top = 95.0
 margin_right = 1023.0
-margin_bottom = 245.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 5 )
 text = "Un motor es drag and drop cuando:"
 
 [node name="Button6" type="Button" parent="."]
-margin_left = 466.0
+margin_left = 464.0
 margin_top = 97.0
 margin_right = 1021.0
-margin_bottom = 247.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 7 )
 text = "Un recurso tecnológico..."
 
 [node name="Button11" type="Button" parent="."]
-margin_left = 469.0
+margin_left = 463.0
 margin_top = 100.0
 margin_right = 1026.0
 margin_bottom = 250.0
@@ -238,7 +246,7 @@ custom_fonts/font = SubResource( 8 )
 text = "Que es un motor de videojuegos?"
 
 [node name="Button16" type="Button" parent="."]
-margin_left = 468.0
+margin_left = 463.0
 margin_top = 100.0
 margin_right = 1026.0
 margin_bottom = 250.0
@@ -249,61 +257,61 @@ text = "La arquitectura de un motor es de…"
 margin_left = 463.0
 margin_top = 97.0
 margin_right = 1023.0
-margin_bottom = 247.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 11 )
 text = "Que es pseudocódigo?"
 
 [node name="Button21" type="Button" parent="."]
-margin_left = 462.207
-margin_top = 97.905
-margin_right = 1023.21
-margin_bottom = 252.905
+margin_left = 462.0
+margin_top = 96.0
+margin_right = 1023.0
+margin_bottom = 253.0
 custom_fonts/font = SubResource( 12 )
 text = "Que es un diagrama de flujos?"
 
 [node name="Button27" type="Button" parent="."]
 margin_left = 420.0
-margin_top = 281.0
-margin_right = 1016.0
+margin_top = 275.0
+margin_right = 1021.0
 margin_bottom = 331.0
 custom_fonts/font = SubResource( 13 )
 text = "Contenido interactivo en formato web."
 
 [node name="Button32" type="Button" parent="."]
 margin_left = 419.0
-margin_top = 279.0
+margin_top = 274.0
 margin_right = 1019.0
 margin_bottom = 329.0
 custom_fonts/font = SubResource( 14 )
 text = "Código C#"
 
 [node name="Button37" type="Button" parent="."]
-margin_left = 422.095
-margin_top = 276.0
-margin_right = 1022.09
-margin_bottom = 326.0
+margin_left = 422.0
+margin_top = 274.0
+margin_right = 1022.0
+margin_bottom = 328.0
 custom_fonts/font = SubResource( 15 )
 text = "Kit de mecánicas con propósitos específicos."
 
 [node name="Button42" type="Button" parent="."]
 margin_left = 420.0
-margin_top = 277.0
+margin_top = 275.0
 margin_right = 1022.0
-margin_bottom = 327.0
+margin_bottom = 330.0
 custom_fonts/font = SubResource( 16 )
 text = "Denominación del clima cuando llueven cerebros."
 
 [node name="Button47" type="Button" parent="."]
-margin_left = 424.0
-margin_top = 277.0
+margin_left = 421.0
+margin_top = 273.0
 margin_right = 1021.0
-margin_bottom = 327.0
+margin_bottom = 329.0
 custom_fonts/font = SubResource( 17 )
 text = "Se programa mediante bloques de acción y condición"
 
 [node name="Button7" type="Button" parent="."]
-margin_left = 429.0
-margin_top = 279.0
+margin_left = 421.0
+margin_top = 273.0
 margin_right = 1018.0
 margin_bottom = 329.0
 custom_fonts/font = SubResource( 19 )
@@ -311,7 +319,7 @@ text = "Es algo que aún no existe y debe ser inventado."
 
 [node name="Button12" type="Button" parent="."]
 margin_left = 421.0
-margin_top = 277.0
+margin_top = 274.0
 margin_right = 1019.0
 margin_bottom = 327.0
 custom_fonts/font = SubResource( 20 )
@@ -334,107 +342,107 @@ custom_fonts/font = SubResource( 23 )
 text = "Reseña de alto nivel de un programa informático."
 
 [node name="Button22" type="Button" parent="."]
-margin_left = 423.973
-margin_top = 273.037
-margin_right = 1020.97
-margin_bottom = 328.037
+margin_left = 420.0
+margin_top = 273.698
+margin_right = 1021.0
+margin_bottom = 329.698
 custom_fonts/font = SubResource( 24 )
 text = "Representación gráfica de un algoritmo o un proceso."
 
 [node name="Button26" type="Button" parent="."]
-margin_left = 429.0
-margin_top = 364.0
+margin_left = 420.0
+margin_top = 356.0
 margin_right = 1018.0
-margin_bottom = 414.0
+margin_bottom = 422.0
 custom_fonts/font = SubResource( 25 )
 text = "Videojuegos 2D y 3D."
 
 [node name="Button31" type="Button" parent="."]
-margin_left = 422.0
-margin_top = 360.0
+margin_left = 418.0
+margin_top = 358.0
 margin_right = 1015.0
 margin_bottom = 419.0
 custom_fonts/font = SubResource( 26 )
 text = "Interfaz visual, basado en Drag and Drop "
 
 [node name="Button36" type="Button" parent="."]
-margin_left = 426.0
+margin_left = 418.0
 margin_top = 355.0
 margin_right = 1017.0
-margin_bottom = 415.0
+margin_bottom = 422.0
 custom_fonts/font = SubResource( 27 )
 text = "Kit de software con propósitos específicos."
 
 [node name="Button41" type="Button" parent="."]
-margin_left = 429.0
-margin_top = 364.0
+margin_left = 419.0
+margin_top = 358.0
 margin_right = 1019.0
 margin_bottom = 419.0
 custom_fonts/font = SubResource( 28 )
 text = "Es una técnica de programación."
 
 [node name="Button46" type="Button" parent="."]
-margin_left = 428.0
-margin_top = 361.0
+margin_left = 418.0
+margin_top = 358.0
 margin_right = 1016.0
-margin_bottom = 416.0
+margin_bottom = 421.0
 custom_fonts/font = SubResource( 29 )
 text = "Se programa mediante scripts"
 
 [node name="Button8" type="Button" parent="."]
-margin_left = 428.0
-margin_top = 360.0
+margin_left = 419.0
+margin_top = 357.0
 margin_right = 1013.0
-margin_bottom = 417.0
+margin_bottom = 419.0
 custom_fonts/font = SubResource( 31 )
 text = "Se vale de la tecnología para cumplir su propósito "
 
 [node name="Button13" type="Button" parent="."]
-margin_left = 416.927
-margin_top = 360.493
-margin_right = 1019.93
-margin_bottom = 415.493
+margin_left = 417.0
+margin_top = 359.0
+margin_right = 1020.0
+margin_bottom = 420.0
 custom_fonts/font = SubResource( 32 )
 text = "Es un conjunto de herramientas de desarrollo visual."
 
 [node name="Button18" type="Button" parent="."]
-margin_left = 431.0
-margin_top = 364.0
+margin_left = 418.0
+margin_top = 357.0
 margin_right = 1009.0
-margin_bottom = 414.0
+margin_bottom = 421.0
 custom_fonts/font = SubResource( 33 )
 text = "No tiene arquitectura."
 
 [node name="Button3" type="Button" parent="."]
-margin_left = 429.0
-margin_top = 364.0
+margin_left = 418.0
+margin_top = 357.0
 margin_right = 1017.0
-margin_bottom = 414.0
+margin_bottom = 420.0
 custom_fonts/font = SubResource( 35 )
 text = "Un código pegado a otro código"
 
 [node name="Button23" type="Button" parent="."]
-margin_left = 425.0
+margin_left = 419.0
 margin_top = 357.0
-margin_right = 1012.0
+margin_right = 1018.0
 margin_bottom = 421.0
 rect_pivot_offset = Vector2( 58.417, 15.9 )
 custom_fonts/font = SubResource( 37 )
 text = "Representación gráfica del sistema digestivo."
 
 [node name="Button29" type="Button" parent="."]
-margin_left = 441.0
-margin_top = 443.0
+margin_left = 433.0
+margin_top = 435.0
 margin_right = 1016.0
-margin_bottom = 493.0
+margin_bottom = 496.0
 custom_fonts/font = SubResource( 38 )
 text = "Videoclips."
 
 [node name="Button34" type="Button" parent="."]
-margin_left = 441.0
+margin_left = 433.0
 margin_top = 436.0
 margin_right = 1011.0
-margin_bottom = 493.0
+margin_bottom = 496.0
 custom_fonts/font = SubResource( 39 )
 text = "No se programa."
 
@@ -447,57 +455,57 @@ custom_fonts/font = SubResource( 40 )
 text = "Kit de programas que se pueden comprar por Steam."
 
 [node name="Button44" type="Button" parent="."]
-margin_left = 441.0
-margin_top = 439.0
+margin_left = 433.0
+margin_top = 435.0
 margin_right = 1012.0
-margin_bottom = 489.0
+margin_bottom = 496.0
 custom_fonts/font = SubResource( 41 )
 text = "Técnica grupal para obtener ideas"
 
 [node name="Button49" type="Button" parent="."]
-margin_left = 436.0
-margin_top = 438.0
+margin_left = 433.0
+margin_top = 435.0
 margin_right = 1018.0
-margin_bottom = 493.0
+margin_bottom = 496.0
 custom_fonts/font = SubResource( 42 )
 text = "No se programa"
 
 [node name="Button10" type="Button" parent="."]
-margin_left = 439.0
-margin_top = 443.0
+margin_left = 434.0
+margin_top = 434.0
 margin_right = 1015.0
-margin_bottom = 493.0
+margin_bottom = 495.0
 custom_fonts/font = SubResource( 43 )
 text = "Es la forma en la que piensan las computadoras."
 
 [node name="Button15" type="Button" parent="."]
-margin_left = 439.0
-margin_top = 439.0
-margin_right = 1015.0
-margin_bottom = 489.0
+margin_left = 433.0
+margin_top = 435.0
+margin_right = 1018.0
+margin_bottom = 496.0
 custom_fonts/font = SubResource( 44 )
 text = "Es una computadora para hacer videojuegos"
 
 [node name="Button20" type="Button" parent="."]
-margin_left = 436.0
+margin_left = 433.0
 margin_top = 436.0
-margin_right = 1012.0
-margin_bottom = 486.0
+margin_right = 1019.0
+margin_bottom = 496.0
 custom_fonts/font = SubResource( 45 )
 text = "Capas independientes y reutilizables."
 
 [node name="Button4" type="Button" parent="."]
-margin_left = 441.0
-margin_top = 438.0
-margin_right = 1014.0
-margin_bottom = 488.0
+margin_left = 433.0
+margin_top = 436.0
+margin_right = 1020.0
+margin_bottom = 495.0
 custom_fonts/font = SubResource( 47 )
 text = "Un mensaje codificado."
 
 [node name="Button25" type="Button" parent="."]
-margin_left = 441.0
+margin_left = 432.0
 margin_top = 434.0
-margin_right = 1014.0
+margin_right = 1019.0
 margin_bottom = 495.0
 custom_fonts/font = SubResource( 48 )
 text = "Es un dibujo a mano del auto de volver al futuro."

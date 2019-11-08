@@ -280,6 +280,6 @@ func _on_Button22_pressed():
 
 
 func _on_atras_pressed():
-	new_script.trivia2 =+ correctatotal
+	new_script.trivia2 =+ correcta
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

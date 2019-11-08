@@ -113,24 +113,32 @@ position = Vector2( 252.999, 306.471 )
 scale = Vector2( 0.259209, 0.323738 )
 texture = ExtResource( 2 )
 
+[node name="Button14" type="Button" parent="."]
+margin_left = 560.0
+margin_top = 71.0
+margin_right = 1023.0
+margin_bottom = 215.0
+custom_fonts/font = SubResource( 1 )
+text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
+
 [node name="Button6" type="Button" parent="."]
-margin_left = 668.164
-margin_top = 70.649
-margin_right = 1005.16
-margin_bottom = 214.649
+margin_left = 560.0
+margin_top = 71.0
+margin_right = 1023.0
+margin_bottom = 215.0
 custom_fonts/font = SubResource( 1 )
 text = "diferencia Paidia y Ludus"
 
 [node name="Button7" type="Button" parent="."]
-margin_left = 668.164
-margin_top = 70.649
-margin_right = 1005.16
-margin_bottom = 214.649
+margin_left = 558.0
+margin_top = 71.0
+margin_right = 1020.0
+margin_bottom = 215.0
 custom_fonts/font = SubResource( 2 )
 text = "Lo que prima en los juegos Ilinx"
 
 [node name="Button8" type="Button" parent="."]
-margin_left = 668.0
+margin_left = 557.0
 margin_top = 71.0
 margin_right = 1028.0
 margin_bottom = 215.0
@@ -138,23 +146,23 @@ custom_fonts/font = SubResource( 3 )
 text = "el juego de Mimicry lo que prima"
 
 [node name="Button9" type="Button" parent="."]
-margin_left = 668.164
-margin_top = 70.649
-margin_right = 1005.16
-margin_bottom = 214.649
+margin_left = 560.0
+margin_top = 71.0
+margin_right = 1006.0
+margin_bottom = 215.0
 custom_fonts/font = SubResource( 4 )
 text = "Los juegos de azar son:"
 
 [node name="Button10" type="Button" parent="."]
-margin_left = 623.679
+margin_left = 559.0
 margin_top = 71.0
-margin_right = 1022.68
+margin_right = 1022.0
 margin_bottom = 215.0
 custom_fonts/font = SubResource( 5 )
 text = "Competencia en condiciones iguales"
 
 [node name="Button11" type="Button" parent="."]
-margin_left = 668.0
+margin_left = 556.0
 margin_top = 71.0
 margin_right = 1023.0
 margin_bottom = 215.0
@@ -162,10 +170,10 @@ custom_fonts/font = SubResource( 6 )
 text = "En un juego no hay tensión por"
 
 [node name="Button12" type="Button" parent="."]
-margin_left = 607.35
-margin_top = 67.5009
-margin_right = 1025.35
-margin_bottom = 211.501
+margin_left = 559.0
+margin_top = 68.0
+margin_right = 1026.0
+margin_bottom = 212.0
 custom_fonts/font = SubResource( 7 )
 text = "En la teoría de juego, un tramposo es"
 

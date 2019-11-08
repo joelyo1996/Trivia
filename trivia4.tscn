@@ -10,6 +10,7 @@
 [ext_resource path="res://asset/musica/jefe4.ogg" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=1]
+outline_color = Color( 0.843137, 0.109804, 0.109804, 1 )
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -123,12 +124,20 @@ position = Vector2( 140.055, 408.874 )
 scale = Vector2( 0.143186, 0.194921 )
 texture = ExtResource( 3 )
 
+[node name="Button11" type="Button" parent="."]
+margin_left = 503.0
+margin_top = 37.0
+margin_right = 1026.0
+margin_bottom = 184.0
+custom_fonts/font = SubResource( 1 )
+text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
+
 [node name="Button3" type="Button" parent="."]
 margin_left = 501.0
 margin_top = 37.0
 margin_right = 1024.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "¿Cuál es el peor modelo de monetización?"
 
 [node name="Button4" type="Button" parent="."]
@@ -136,7 +145,7 @@ margin_left = 502.0
 margin_top = 37.0
 margin_right = 1025.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 text = " ADVA es…"
 
 [node name="Button5" type="Button" parent="."]
@@ -144,7 +153,7 @@ margin_left = 503.0
 margin_top = 37.0
 margin_right = 1025.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Un GDD es…"
 
 [node name="Button6" type="Button" parent="."]
@@ -152,7 +161,7 @@ margin_left = 506.0
 margin_top = 37.0
 margin_right = 1025.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Un high concept sirve para"
 
 [node name="Button7" type="Button" parent="."]
@@ -160,7 +169,7 @@ margin_left = 502.0
 margin_top = 37.0
 margin_right = 1025.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "La estructura MDA corresponde a…"
 
 [node name="Button8" type="Button" parent="."]
@@ -168,7 +177,7 @@ margin_left = 505.0
 margin_top = 37.0
 margin_right = 1025.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
 text = " ¿Quién es Toru Iwatani?"
 
 [node name="Button9" type="Button" parent="."]
@@ -176,7 +185,7 @@ margin_left = 503.0
 margin_top = 36.0
 margin_right = 1028.0
 margin_bottom = 183.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
 text = "¿Cuál fue el primer éxito de Nintendo?"
 
 [node name="Button10" type="Button" parent="."]
@@ -184,7 +193,7 @@ margin_left = 503.0
 margin_top = 37.0
 margin_right = 1025.0
 margin_bottom = 184.0
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 1 )
 text = "¿A qué se considera una mecánica?"
 
 [node name="Button13" type="Button" parent="."]
@@ -204,7 +213,7 @@ custom_fonts/font = SubResource( 10 )
 text = "Asociación de Desarrolladores de VJ de Argentina"
 
 [node name="Button15" type="Button" parent="."]
-margin_left = 501.0
+margin_left = 505.0
 margin_top = 241.0
 margin_right = 1025.0
 margin_bottom = 301.0
@@ -324,7 +333,7 @@ custom_fonts/font = SubResource( 25 )
 text = "Piratería"
 
 [node name="Button34" type="Button" parent="."]
-margin_left = 511.0
+margin_left = 513.0
 margin_top = 484.0
 margin_right = 1027.0
 margin_bottom = 544.0
@@ -364,7 +373,7 @@ custom_fonts/font = SubResource( 30 )
 text = "Creador de Metal Gear"
 
 [node name="Button39" type="Button" parent="."]
-margin_left = 512.0
+margin_left = 514.0
 margin_top = 483.0
 margin_right = 1024.0
 margin_bottom = 543.0

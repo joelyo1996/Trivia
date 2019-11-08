@@ -11,11 +11,12 @@ signal guerrero()
 func _ready():
 	new_script.correctatotal = new_script.trivia1 +new_script.trivia2 +new_script.trivia3 +new_script.trivia4
 	print(new_script.correctatotal)
+	
 	if(new_script.pj =="mago"):
 		remove_child($Node2D)
 	else:
  		remove_child($Node2D2)
-	if(new_script.correctatotal == 24):
+	if(new_script.correctatotal >= 24):
 		get_tree().change_scene("res://ganaste.tscn")
 	
  # Replace with function body.
