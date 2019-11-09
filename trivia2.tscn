@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://trivia2.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/berna.png" type="Texture" id=2]
@@ -105,6 +105,9 @@ font_data = ExtResource( 3 )
 [sub_resource type="DynamicFont" id=32]
 font_data = ExtResource( 3 )
 
+[sub_resource type="DynamicFont" id=33]
+font_data = ExtResource( 3 )
+
 [node name="trivia2" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -116,10 +119,10 @@ texture = ExtResource( 2 )
 [node name="Button14" type="Button" parent="."]
 margin_left = 560.0
 margin_top = 71.0
-margin_right = 1023.0
+margin_right = 1041.0
 margin_bottom = 215.0
 custom_fonts/font = SubResource( 1 )
-text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
+text = "TERMINASTE LA TRIVIA, COTInUA COn LAS OTRAS"
 
 [node name="Button6" type="Button" parent="."]
 margin_left = 560.0
@@ -406,6 +409,7 @@ margin_left = 330.028
 margin_top = 49.1869
 margin_right = 370.028
 margin_bottom = 63.1869
+custom_fonts/font = SubResource( 33 )
 
 [node name="atras" type="Button" parent="."]
 margin_left = 1.50732

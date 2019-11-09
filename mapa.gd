@@ -20,7 +20,9 @@ func _ready():
 		get_tree().change_scene("res://ganaste.tscn")
 	
  # Replace with function body.
-
+func _process(delta):
+	$Label.text="correctas total: "+ str(new_script.correctatotal)
+	pass
 func personaje2():
 	#print("hola")
 	get_tree().call($Node2D/AnimationPlayer.play("maga"))

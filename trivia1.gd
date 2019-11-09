@@ -15,9 +15,7 @@ func _ready():
 func personaje1():
 	$AnimationPlayer.play("guerrero")
 	pass
-func personaje2():
-	preload("res://asset/Imagenes/Personaje femenino.png")
-	pass
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	$Label.text="correctas "+ str(correcta)
