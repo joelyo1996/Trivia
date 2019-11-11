@@ -1,3 +1,51 @@
-[gd_scene format=2]
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://ganaste.gd" type="Script" id=1]
+[ext_resource path="res://asset/Imagenes/victoriao.png" type="Texture" id=2]
+[ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://asset/Imagenes/boton atraso.png" type="Texture" id=4]
+[ext_resource path="res://asset/musica/y2matecom_musica_medieval_6z6oXMOYGoM.ogg" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 3 )
 
 [node name="ganaste" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="victoria" type="Sprite" parent="."]
+position = Vector2( 511.314, 301.894 )
+scale = Vector2( 0.340746, 0.300211 )
+texture = ExtResource( 2 )
+
+[node name="memu" type="Button" parent="."]
+margin_left = 42.1942
+margin_top = 54.5007
+margin_right = 377.194
+margin_bottom = 95.5007
+custom_fonts/font = SubResource( 1 )
+text = "Volver al menu"
+
+[node name="salir" type="Button" parent="."]
+margin_left = 933.544
+margin_top = 499.297
+margin_right = 1789.54
+margin_bottom = 1460.3
+rect_scale = Vector2( 0.1, 0.1 )
+icon = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 505.706
+margin_top = 40.0
+margin_right = 553.706
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+[connection signal="pressed" from="memu" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="salir" to="." method="_on_salir_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://trivia1.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/navegante1.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://asset/Imagenes/nacho.png" type="Texture" id=6]
 [ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=7]
 [ext_resource path="res://asset/musica/jefe1.ogg" type="AudioStream" id=8]
+[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
+[ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 3 )
@@ -542,7 +544,16 @@ icon = ExtResource( 7 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
+volume_db = -11.107
 autoplay = true
+
+[node name="correcta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="imcorrecta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="Timer" type="Timer" parent="."]
 [connection signal="pressed" from="Button27" to="." method="_on_Button27_pressed"]
 [connection signal="pressed" from="Button32" to="." method="_on_Button32_pressed"]
 [connection signal="pressed" from="Button37" to="." method="_on_Button37_pressed"]
@@ -574,3 +585,4 @@ autoplay = true
 [connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
 [connection signal="pressed" from="Button25" to="." method="_on_Button25_pressed"]
 [connection signal="pressed" from="atras" to="." method="_on_atras_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

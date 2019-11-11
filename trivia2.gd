@@ -70,6 +70,8 @@ func _on_Button32_pressed():
 
 
 func _on_Button15_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button6.queue_free()
 	$Button15.queue_free()
 	$Button24.queue_free()
@@ -79,6 +81,8 @@ func _on_Button15_pressed():
 
 
 func _on_Button24_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button6.queue_free()
 	$Button15.queue_free()
 	$Button24.queue_free()
@@ -89,6 +93,8 @@ func _on_Button24_pressed():
 
 
 func _on_Button33_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button6.queue_free()
 	$Button15.queue_free()
 	$Button24.queue_free()
@@ -98,6 +104,8 @@ func _on_Button33_pressed():
 
 
 func _on_Button34_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button7.queue_free()
 	$Button16.queue_free()
 	$Button25.queue_free()
@@ -108,6 +116,8 @@ func _on_Button34_pressed():
 
 
 func _on_Button25_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button7.queue_free()
 	$Button16.queue_free()
 	$Button25.queue_free()
@@ -116,6 +126,8 @@ func _on_Button25_pressed():
 
 
 func _on_Button16_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button7.queue_free()
 	$Button16.queue_free()
 	$Button25.queue_free()
@@ -124,6 +136,8 @@ func _on_Button16_pressed():
 
 
 func _on_Button17_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button8.queue_free()
 	$Button17.queue_free()
 	$Button26.queue_free()
@@ -132,6 +146,8 @@ func _on_Button17_pressed():
 
 
 func _on_Button26_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button8.queue_free()
 	$Button17.queue_free()
 	$Button26.queue_free()
@@ -142,6 +158,8 @@ func _on_Button26_pressed():
 
 
 func _on_Button35_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button8.queue_free()
 	$Button17.queue_free()
 	$Button26.queue_free()
@@ -150,6 +168,8 @@ func _on_Button35_pressed():
 
 
 func _on_Button36_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button9.queue_free()
 	$Button18.queue_free()
 	$Button27.queue_free()
@@ -158,6 +178,8 @@ func _on_Button36_pressed():
 
 
 func _on_Button27_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button9.queue_free()
 	$Button18.queue_free()
 	$Button27.queue_free()
@@ -168,6 +190,8 @@ func _on_Button27_pressed():
 
 
 func _on_Button18_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button9.queue_free()
 	$Button18.queue_free()
 	$Button27.queue_free()
@@ -176,6 +200,8 @@ func _on_Button18_pressed():
 
 
 func _on_Button19_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button10.queue_free()
 	$Button19.queue_free()
 	$Button28.queue_free()
@@ -186,6 +212,8 @@ func _on_Button19_pressed():
 
 
 func _on_Button28_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button10.queue_free()
 	$Button19.queue_free()
 	$Button28.queue_free()
@@ -194,6 +222,8 @@ func _on_Button28_pressed():
 
 
 func _on_Button37_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button10.queue_free()
 	$Button19.queue_free()
 	$Button28.queue_free()
@@ -202,6 +232,8 @@ func _on_Button37_pressed():
 
 
 func _on_Button38_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button11.queue_free()
 	$Button20.queue_free()
 	$Button29.queue_free()
@@ -210,6 +242,8 @@ func _on_Button38_pressed():
 
 
 func _on_Button29_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button11.queue_free()
 	$Button20.queue_free()
 	$Button29.queue_free()
@@ -218,6 +252,8 @@ func _on_Button29_pressed():
 
 
 func _on_Button20_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button11.queue_free()
 	$Button20.queue_free()
 	$Button29.queue_free()
@@ -228,6 +264,8 @@ func _on_Button20_pressed():
 
 
 func _on_Button21_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button12.queue_free()
 	$Button21.queue_free()
 	$Button30.queue_free()
@@ -238,6 +276,8 @@ func _on_Button21_pressed():
 
 
 func _on_Button30_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button12.queue_free()
 	$Button21.queue_free()
 	$Button30.queue_free()
@@ -246,6 +286,8 @@ func _on_Button30_pressed():
 
 
 func _on_Button39_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button12.queue_free()
 	$Button21.queue_free()
 	$Button30.queue_free()
@@ -254,6 +296,8 @@ func _on_Button39_pressed():
 
 
 func _on_Button40_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button13.queue_free()
 	$Button22.queue_free()
 	$Button31.queue_free()
@@ -262,6 +306,8 @@ func _on_Button40_pressed():
 
 
 func _on_Button31_pressed():
+	$correcta.play()
+	$Timer.start()
 	$Button13.queue_free()
 	$Button22.queue_free()
 	$Button31.queue_free()
@@ -272,6 +318,8 @@ func _on_Button31_pressed():
 
 
 func _on_Button22_pressed():
+	$imcorrecta.play()
+	$Timer.start()
 	$Button13.queue_free()
 	$Button22.queue_free()
 	$Button31.queue_free()
@@ -282,4 +330,10 @@ func _on_Button22_pressed():
 func _on_atras_pressed():
 	new_script.trivia2 =+ correcta
 	get_tree().change_scene("res://mapa.tscn")
+	pass # Replace with function body.
+
+
+func _on_Timer_timeout():
+	$imcorrecta.stop()
+	$correcta.stop()
 	pass # Replace with function body.

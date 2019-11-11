@@ -1,6 +1,6 @@
 extends Node
 var pj
-var correctatotal
+var correctatotal=0
 var trivia1=0
 var trivia2=0
 var trivia3=0
