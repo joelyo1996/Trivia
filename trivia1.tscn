@@ -189,7 +189,7 @@ margin_top = 95.0
 margin_right = 1023.0
 margin_bottom = 251.0
 custom_fonts/font = SubResource( 1 )
-text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
+text = "TERMINASTE LA TRIVIA, CONTINÚA CON LAS OTRAS"
 
 [node name="Button30" type="Button" parent="."]
 margin_left = 464.0

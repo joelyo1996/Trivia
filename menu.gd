@@ -27,7 +27,7 @@ func _on_quincho_pressed():
 
 
 func _on_creditos_pressed():
-	$AnimationPlayer.play("creditos")
+	$AnimationPlayer.play("boton_creditos_open")
 	
 	pass # Replace with function body.
 
@@ -44,5 +44,5 @@ func _on_Salir_pressed():
 
 func _on_play2_pressed():
 	$Audioplay.playing
-	get_tree().change_scene("res://menu2.tscn")
+	get_tree().change_scene("res://presemtacio.tscn")
 	pass # Replace with function body.
