@@ -12,8 +12,8 @@ font_data = ExtResource( 3 )
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 517.86, 303.009 )
-scale = Vector2( 0.827427, 0.835661 )
+position = Vector2( 511.179, 301.339 )
+scale = Vector2( 0.838202, 0.835661 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]

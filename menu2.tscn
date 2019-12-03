@@ -13,8 +13,8 @@
 script = ExtResource( 1 )
 
 [node name="fodo" type="Sprite" parent="."]
-position = Vector2( 512.647, 296.253 )
-scale = Vector2( 0.820387, 0.831974 )
+position = Vector2( 511.745, 297.76 )
+scale = Vector2( 0.821843, 0.836161 )
 texture = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="."]

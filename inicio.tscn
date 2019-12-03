@@ -70,8 +70,8 @@ offset = Vector2( 270, 60 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 499.024, 297.028 )
-scale = Vector2( 0.15614, 0.210986 )
+position = Vector2( 434.497, 258.734 )
+scale = Vector2( 0.0712361, 0.120457 )
 texture = ExtResource( 5 )
 offset = Vector2( 270, 60 )
 
