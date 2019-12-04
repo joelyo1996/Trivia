@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://mapa.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/czcfdfazxczxcRecuperado.png" type="Texture" id=2]
@@ -42,7 +42,70 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="Animation" id=3]
+resource_name = "salir"
+tracks/0/type = "value"
+tracks/0/path = NodePath("fondo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Node2D2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("salir:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Label:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0.0276556, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=4]
 font_data = ExtResource( 12 )
 
 [node name="Node2D" type="Node2D"]
@@ -102,6 +165,7 @@ position = Vector2( 320.752, 437.552 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Nueva animación" = SubResource( 2 )
+anims/salir = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1103.18, 340.998 )
@@ -118,14 +182,27 @@ rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 11 )
 
 [node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.968853 )
 margin_right = 138.0
 margin_bottom = 50.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 
 [node name="salir" type="Sprite" parent="."]
 position = Vector2( 55.4017, 554.017 )
 scale = Vector2( 0.139056, 0.103559 )
 texture = ExtResource( 11 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="trivia2" type="Timer" parent="."]
+
+[node name="trivia3" type="Timer" parent="."]
+
+[node name="trivia4" type="Timer" parent="."]
+
+[node name="victoria" type="Timer" parent="."]
+
+[node name="atras2" type="Timer" parent="."]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
@@ -133,3 +210,9 @@ texture = ExtResource( 11 )
 [connection signal="maga" from="Node2D" to="." method="_on_Node2D_maga"]
 [connection signal="guerrero" from="Node2D2" to="." method="_on_Node2D2_guerrero"]
 [connection signal="pressed" from="atras" to="." method="_on_atras_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="trivia2" to="." method="_on_trivia2_timeout"]
+[connection signal="timeout" from="trivia3" to="." method="_on_trivia3_timeout"]
+[connection signal="timeout" from="trivia4" to="." method="_on_trivia4_timeout"]
+[connection signal="timeout" from="victoria" to="." method="_on_victoria_timeout"]
+[connection signal="timeout" from="atras2" to="." method="_on_atras2_timeout"]

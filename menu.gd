@@ -38,11 +38,24 @@ func _on_salir_credito_pressed():
 
 
 func _on_Salir_pressed():
-	get_tree().quit()
+	$AnimationPlayer2.play("salir")
+	$salir.start()
+	
 	pass # Replace with function body.
 
 
 func _on_play2_pressed():
 	$Audioplay.playing
+	$AnimationPlayer2.play("salir")
+	$jugar.start()
+	pass # Replace with function body.
+
+
+func _on_jugar_timeout():
 	get_tree().change_scene("res://presemtacio.tscn")
+	pass # Replace with function body.
+
+
+func _on_salir_timeout():
+	get_tree().quit()
 	pass # Replace with function body.

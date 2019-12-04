@@ -25,5 +25,12 @@ func personaje1():
 
 
 func _on_Timer_timeout():
+	$AnimationPlayer.play("salir")
+	$Timer2.start()
+	
+	pass # Replace with function body.
+
+
+func _on_Timer2_timeout():
 	get_tree().change_scene("res://menu.tscn")
 	pass # Replace with function body.

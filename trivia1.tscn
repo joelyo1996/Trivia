@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://trivia1.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/navegante1.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://asset/musica/jefe1.ogg" type="AudioStream" id=8]
 [ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
 [ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 3 )
@@ -174,7 +175,23 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
+[sub_resource type="Animation" id=51]
+resource_name = "salir"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.000766389, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
 [node name="Node2D" type="Node2D"]
+modulate = Color( 1, 1, 1, 0.955051 )
 position = Vector2( 2, 0 )
 script = ExtResource( 1 )
 
@@ -527,6 +544,7 @@ position = Vector2( 322.433, 447.873 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/guerrero = SubResource( 50 )
+anims/salir = SubResource( 51 )
 
 [node name="nacho" type="Sprite" parent="."]
 position = Vector2( 130.109, 339.6 )
@@ -535,6 +553,7 @@ texture = ExtResource( 6 )
 normal_map = ExtResource( 6 )
 
 [node name="atras" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = -4.83472
 margin_top = 494.814
 margin_right = 851.165
@@ -554,6 +573,14 @@ stream = ExtResource( 9 )
 stream = ExtResource( 10 )
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 47.5368, 542.901 )
+scale = Vector2( 0.651138, 0.551054 )
+texture = ExtResource( 11 )
+
+[node name="salir" type="Timer" parent="."]
+[connection signal="pressed" from="Button33" to="." method="_on_Button33_pressed"]
 [connection signal="pressed" from="Button27" to="." method="_on_Button27_pressed"]
 [connection signal="pressed" from="Button32" to="." method="_on_Button32_pressed"]
 [connection signal="pressed" from="Button37" to="." method="_on_Button37_pressed"]
@@ -586,3 +613,4 @@ stream = ExtResource( 10 )
 [connection signal="pressed" from="Button25" to="." method="_on_Button25_pressed"]
 [connection signal="pressed" from="atras" to="." method="_on_atras_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="salir" to="." method="_on_salir_timeout"]

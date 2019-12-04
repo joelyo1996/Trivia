@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/carte.png" type="Texture" id=2]
@@ -46,6 +46,21 @@ tracks/2/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
+[sub_resource type="Animation" id=2]
+resource_name = "salir"
+tracks/0/type = "value"
+tracks/0/path = NodePath("fodo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -77,11 +92,15 @@ offset = Vector2( 270, 60 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/anim = SubResource( 1 )
+anims/salir = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 13.0
 one_shot = true
 autostart = true
+
+[node name="Timer2" type="Timer" parent="."]
 [connection signal="tree_entered" from="." to="." method="_on_Node2D_tree_entered"]
 [connection signal="tree_exited" from="." to="." method="_on_Node2D_tree_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]

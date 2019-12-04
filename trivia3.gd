@@ -17,8 +17,8 @@ func _ready():
 
 
 func _on_atras_pressed():
-	new_script.trivia3 =+ correcta
-	get_tree().change_scene("res://mapa.tscn")
+	$AnimationPlayer.play("salir")
+	$salir.start()
 	pass # Replace with function body.
 
 func _process(delta):
@@ -328,17 +328,19 @@ func _on_Button21_pressed():
 
 
 func _on_Button11_pressed():
-	$imcorrecta.play()
-	$Timer.start()
-	$Button.queue_free()
-	$Button11.queue_free()
-	$Button21.queue_free()
-	$Button31.queue_free()
-	correctatotal = correcta
+	$AnimationPlayer.play("salir")
+	$salir.start()
+	
 	pass # Replace with function body.
 
 
 func _on_Timer_timeout():
 	$imcorrecta.stop()
 	$correcta.stop()
+	pass # Replace with function body.
+
+
+func _on_salir_timeout():
+	new_script.trivia3 =+ correcta
+	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

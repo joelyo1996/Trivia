@@ -17,7 +17,9 @@ func _ready():
 	else:
  		remove_child($Node2D2)
 	if(new_script.correctatotal >= 24):
-		get_tree().change_scene("res://ganaste.tscn")
+		$AnimationPlayer.play("salir")
+		$victoria.start()
+		
 	
  # Replace with function body.
 func _process(delta):
@@ -35,7 +37,9 @@ func personaje1():
 	pass
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://trivia1.tscn")
+	$AnimationPlayer.play("salir")
+	$trivia4.start()
+	
 	pass # Replace with function body.
 
 
@@ -57,20 +61,57 @@ func _on_Node2D2_guerrero():
 
 
 func _on_Button2_pressed():
-	get_tree().change_scene("res://trivia2.tscn")
+	$AnimationPlayer.play("salir")
+	$trivia2.start()
+	
 	pass # Replace with function body.
 
 
 func _on_atras_pressed():
-	get_tree().change_scene("res://menu2.tscn")
+	$AnimationPlayer.play("salir")
+	$atras2.start()
+	
 	pass # Replace with function body.
 
 
 func _on_Button3_pressed():
-	get_tree().change_scene("res://trivia3.tscn")
+	$AnimationPlayer.play("salir")
+	$trivia3.start()
+	
 	pass # Replace with function body.
 
 
 func _on_Button4_pressed():
+	$AnimationPlayer.play("salir")
+	$Timer.start()
+	pass # Replace with function body.
+
+
+func _on_Timer_timeout():
 	get_tree().change_scene("res://trivia4.tscn")
+	pass # Replace with function body.
+
+
+func _on_trivia2_timeout():
+	get_tree().change_scene("res://trivia2.tscn")
+	pass # Replace with function body.
+
+
+func _on_trivia3_timeout():
+	get_tree().change_scene("res://trivia3.tscn")
+	pass # Replace with function body.
+
+
+func _on_trivia4_timeout():
+	get_tree().change_scene("res://trivia1.tscn")
+	pass # Replace with function body.
+
+
+func _on_victoria_timeout():
+	get_tree().change_scene("res://ganaste.tscn")
+	pass # Replace with function body.
+
+
+func _on_atras2_timeout():
+	get_tree().change_scene("res://menu2.tscn")
 	pass # Replace with function body.

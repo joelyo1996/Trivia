@@ -26,5 +26,11 @@ func _on_Button_pressed():
 
 
 func _on_salir_pressed():
+	$AnimationPlayer.play("salir")
+	$Timer.start()
+	pass # Replace with function body.
+
+
+func _on_Timer_timeout():
 	get_tree().quit()
 	pass # Replace with function body.

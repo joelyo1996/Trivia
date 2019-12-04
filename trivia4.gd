@@ -22,10 +22,8 @@ func _process(delta):
 	$Label.text="correctas "+ str(correcta)
 	
 func _on_Button11_pressed():
-	$Button.queue_free()
-	$Button11.queue_free()
-	$Button21.queue_free()
-	$Button31.queue_free()
+	$AnimationPlayer.play("salir")
+	$salir.start()
 	pass # Replace with function body.
 
 
@@ -323,12 +321,18 @@ func _on_Button20_pressed():
 
 
 func _on_atras_pressed():
-	new_script.trivia4 =+ correcta
-	get_tree().change_scene("res://mapa.tscn")
+	$AnimationPlayer.play("salir")
+	$salir.start()
 	pass # Replace with function body.
 
 
 func _on_Timer_timeout():
 	$imcorrecta.stop()
 	$correcta.stop()
+	pass # Replace with function body.
+
+
+func _on_salir_timeout():
+	new_script.trivia4 =+ correcta
+	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

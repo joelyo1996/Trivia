@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ganaste.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/victoriao.png" type="Texture" id=2]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://asset/Imagenes/boton atraso.png" type="Texture" id=4]
 [ext_resource path="res://asset/musica/y2matecom_musica_medieval_6z6oXMOYGoM.ogg" type="AudioStream" id=5]
+[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -12,6 +13,45 @@ font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "salir"
+tracks/0/type = "value"
+tracks/0/path = NodePath("memu2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("victoria:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Label:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.00939129, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
 
 [node name="ganaste" type="Node2D"]
 script = ExtResource( 1 )
@@ -22,14 +62,15 @@ scale = Vector2( 0.340746, 0.300211 )
 texture = ExtResource( 2 )
 
 [node name="memu" type="Button" parent="."]
-margin_left = 42.1942
-margin_top = 54.5007
-margin_right = 377.194
-margin_bottom = 95.5007
+margin_left = -511.662
+margin_top = 91.6012
+margin_right = -176.662
+margin_bottom = 132.601
 custom_fonts/font = SubResource( 1 )
 text = "Volver al menu"
 
 [node name="salir" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 933.544
 margin_top = 499.297
 margin_right = 1789.54
@@ -47,5 +88,17 @@ custom_fonts/font = SubResource( 2 )
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
+
+[node name="memu2" type="Sprite" parent="."]
+position = Vector2( 963.286, 547.232 )
+scale = Vector2( 0.640964, 0.572131 )
+texture = ExtResource( 6 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/salir = SubResource( 3 )
 [connection signal="pressed" from="memu" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="salir" to="." method="_on_salir_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

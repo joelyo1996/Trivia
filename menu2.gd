@@ -19,7 +19,8 @@ func _on_Button_pressed():
 	new_script.pj= "mago"
 	#$Nodo2D.personaje1()
 	emit_signal("personaje1")
-	get_tree().change_scene("res://mapa.tscn")
+	$AnimationPlayer.play("salir")
+	$Timer.start()
 	#$Node2D.queue_free()
 	#personaje=1
 	
@@ -31,7 +32,8 @@ func _on_Button2_pressed():
 #	$Nodo2D.personaje2()
 	#a=1
 	emit_signal("personaje2")
-	get_tree().change_scene("res://mapa.tscn")
+	$AnimationPlayer.play("salir")
+	$Timer.start()
 	
 	#personaje=2
 	pass # Replace with function body.
@@ -41,5 +43,16 @@ func _on_Button2_pressed():
 
 
 func _on_atras_pressed():
+	$AnimationPlayer.play("salir")
+	$atras2.start()
+	pass # Replace with function body.
+
+
+func _on_Timer_timeout():
+	get_tree().change_scene("res://mapa.tscn")
+	pass # Replace with function body.
+
+
+func _on_atras2_timeout():
 	get_tree().change_scene("res://menu.tscn")
 	pass # Replace with function body.

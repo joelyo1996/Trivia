@@ -46,10 +46,8 @@ func _on_Button4_pressed():
 
 
 func _on_Button14_pressed():
-	$Button5.queue_free()
-	$Button14.queue_free()
-	$Button23.queue_free()
-	$Button32.queue_free()
+	$AnimationPlayer.play("salir")
+	$salir.start()
 	pass # Replace with function body.
 
 
@@ -328,12 +326,18 @@ func _on_Button22_pressed():
 
 
 func _on_atras_pressed():
-	new_script.trivia2 =+ correcta
-	get_tree().change_scene("res://mapa.tscn")
+	$AnimationPlayer.play("salir")
+	$salir.start()
 	pass # Replace with function body.
 
 
 func _on_Timer_timeout():
 	$imcorrecta.stop()
 	$correcta.stop()
+	pass # Replace with function body.
+
+
+func _on_salir_timeout():
+	new_script.trivia2 =+ correcta
+	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.
