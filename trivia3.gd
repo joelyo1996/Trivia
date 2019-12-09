@@ -341,6 +341,7 @@ func _on_Timer_timeout():
 
 
 func _on_salir_timeout():
+	new_script.tri3 = 2
 	new_script.trivia3 =+ correcta
 	get_tree().change_scene("res://mapa.tscn")
 	pass # Replace with function body.

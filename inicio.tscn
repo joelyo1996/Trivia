@@ -71,8 +71,8 @@ texture = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 283.975, 183.303 )
-scale = Vector2( 0.95588, 1.20169 )
+position = Vector2( 234.04, 175.111 )
+scale = Vector2( 1.09974, 1.53519 )
 texture = ExtResource( 3 )
 offset = Vector2( 270, 60 )
 

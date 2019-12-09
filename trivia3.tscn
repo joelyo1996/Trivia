@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://trivia3.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/torre.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://guerrero.tscn" type="PackedScene" id=8]
 [ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
 [ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/Imagenes/boton atraso.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
@@ -218,7 +219,7 @@ margin_top = 234.0
 margin_right = 1020.0
 margin_bottom = 301.0
 custom_fonts/font = SubResource( 9 )
-text = "Pacman"
+text = "Pac-Man"
 
 [node name="Button14" type="Button" parent="."]
 margin_left = 468.0
@@ -412,6 +413,7 @@ margin_bottom = 71.0
 custom_fonts/font = SubResource( 33 )
 
 [node name="atras" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 1.67017
 margin_top = 496.044
 margin_right = 857.67
@@ -442,6 +444,11 @@ stream = ExtResource( 10 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/salir = SubResource( 34 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 62.8319, 533.945 )
+scale = Vector2( 0.165549, 0.133916 )
+texture = ExtResource( 11 )
 [connection signal="pressed" from="Button11" to="." method="_on_Button11_pressed"]
 [connection signal="pressed" from="Button13" to="." method="_on_Button13_pressed"]
 [connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]

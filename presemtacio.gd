@@ -15,11 +15,16 @@ func _ready():
 
 
 func _on_Timer_timeout():
-	$AnimationPlayer.play("salir")
-	$salir.start()
+	
 	pass # Replace with function body.
 
 
 func _on_salir_timeout():
 	get_tree().change_scene("res://menu2.tscn")
+	pass # Replace with function body.
+
+
+func _on_Button_pressed():
+	$AnimationPlayer.play("salir")
+	$salir.start()
 	pass # Replace with function body.

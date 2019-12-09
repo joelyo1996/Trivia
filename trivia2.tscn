@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://trivia2.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/mazmorra.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://asset/musica/jefe2.ogg" type="AudioStream" id=8]
 [ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
 [ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 4 )
@@ -24,6 +25,7 @@ font_data = ExtResource( 4 )
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=5]
+size = 15
 font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=6]
@@ -141,15 +143,15 @@ scale = Vector2( 0.259209, 0.323738 )
 texture = ExtResource( 3 )
 
 [node name="Button14" type="Button" parent="."]
-margin_left = 560.0
+margin_left = 501.0
 margin_top = 71.0
-margin_right = 1041.0
+margin_right = 1023.0
 margin_bottom = 215.0
 custom_fonts/font = SubResource( 1 )
 text = "TERMINASTE LA TRIVIA, COTInUA COn LAS OTRAS"
 
 [node name="Button6" type="Button" parent="."]
-margin_left = 560.0
+margin_left = 502.0
 margin_top = 71.0
 margin_right = 1023.0
 margin_bottom = 215.0
@@ -157,7 +159,7 @@ custom_fonts/font = SubResource( 1 )
 text = "diferencia Paidia y Ludus"
 
 [node name="Button7" type="Button" parent="."]
-margin_left = 558.0
+margin_left = 506.0
 margin_top = 71.0
 margin_right = 1020.0
 margin_bottom = 215.0
@@ -165,7 +167,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Lo que prima en los juegos Ilinx"
 
 [node name="Button8" type="Button" parent="."]
-margin_left = 557.0
+margin_left = 503.0
 margin_top = 71.0
 margin_right = 1028.0
 margin_bottom = 215.0
@@ -173,7 +175,7 @@ custom_fonts/font = SubResource( 3 )
 text = "el juego de Mimicry lo que prima"
 
 [node name="Button9" type="Button" parent="."]
-margin_left = 560.0
+margin_left = 501.0
 margin_top = 71.0
 margin_right = 1006.0
 margin_bottom = 215.0
@@ -181,15 +183,15 @@ custom_fonts/font = SubResource( 4 )
 text = "Los juegos de azar son:"
 
 [node name="Button10" type="Button" parent="."]
-margin_left = 559.0
+margin_left = 501.291
 margin_top = 71.0
-margin_right = 1022.0
+margin_right = 1028.29
 margin_bottom = 215.0
 custom_fonts/font = SubResource( 5 )
-text = "Competencia en condiciones iguales"
+text = "¿Cuál es una competencia en condiciones iguales?"
 
 [node name="Button11" type="Button" parent="."]
-margin_left = 556.0
+margin_left = 500.0
 margin_top = 71.0
 margin_right = 1023.0
 margin_bottom = 215.0
@@ -197,7 +199,7 @@ custom_fonts/font = SubResource( 6 )
 text = "En un juego no hay tensión por"
 
 [node name="Button12" type="Button" parent="."]
-margin_left = 559.0
+margin_left = 503.0
 margin_top = 68.0
 margin_right = 1026.0
 margin_bottom = 212.0
@@ -205,10 +207,10 @@ custom_fonts/font = SubResource( 7 )
 text = "En la teoría de juego, un tramposo es"
 
 [node name="Button13" type="Button" parent="."]
-margin_left = 557.738
-margin_top = 69.568
-margin_right = 1022.74
-margin_bottom = 213.568
+margin_left = 502.0
+margin_top = 70.0
+margin_right = 1023.0
+margin_bottom = 214.0
 custom_fonts/font = SubResource( 8 )
 text = "En la teoría de juego, que es un aguafiestas"
 
@@ -436,6 +438,7 @@ margin_bottom = 63.1869
 custom_fonts/font = SubResource( 33 )
 
 [node name="atras" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 1.50732
 margin_top = 504.958
 margin_right = 857.507
@@ -466,6 +469,11 @@ stream = ExtResource( 10 )
 anims/salir = SubResource( 34 )
 
 [node name="salir" type="Timer" parent="."]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 63.2969, 546.868 )
+scale = Vector2( 0.731653, 0.592374 )
+texture = ExtResource( 11 )
 [connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]
 [connection signal="pressed" from="Button15" to="." method="_on_Button15_pressed"]
 [connection signal="pressed" from="Button16" to="." method="_on_Button16_pressed"]

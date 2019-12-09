@@ -283,7 +283,7 @@ margin_top = 365.0
 margin_right = 1022.0
 margin_bottom = 425.0
 custom_fonts/font = SubResource( 17 )
-text = "Microtransacciones / Lootboxes"
+text = "Microtransacciones / Loot boxes"
 
 [node name="Button24" type="Button" parent="."]
 margin_left = 510.166
@@ -406,10 +406,11 @@ custom_fonts/font = SubResource( 32 )
 text = "Mujer que repara autos"
 
 [node name="atras" type="Button" parent="."]
-margin_left = 5.27426
-margin_top = 504.571
-margin_right = 861.274
-margin_bottom = 1465.57
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 0.130004
+margin_top = 501.999
+margin_right = 856.13
+margin_bottom = 1463.0
 rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 5 )
 
@@ -443,6 +444,11 @@ stream = ExtResource( 10 )
 anims/salir = SubResource( 34 )
 
 [node name="salir" type="Timer" parent="."]
+
+[node name="imgatras" type="Sprite" parent="."]
+position = Vector2( 41.3475, 545.277 )
+scale = Vector2( 0.117322, 0.125346 )
+texture = ExtResource( 5 )
 [connection signal="pressed" from="Button11" to="." method="_on_Button11_pressed"]
 [connection signal="pressed" from="Button13" to="." method="_on_Button13_pressed"]
 [connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]

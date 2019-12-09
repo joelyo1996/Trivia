@@ -45,7 +45,7 @@ func _on_Salir_pressed():
 
 
 func _on_play2_pressed():
-	$Audioplay.playing
+	$Audioplay.play()
 	$AnimationPlayer2.play("salir")
 	$jugar.start()
 	pass # Replace with function body.

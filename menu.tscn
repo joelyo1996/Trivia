@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/promero.jpg" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=10]
 [ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=11]
 [ext_resource path="res://asset/Imagenes/boton muchoca.png" type="Texture" id=12]
+[ext_resource path="res://audio.tscn" type="PackedScene" id=13]
 
 [sub_resource type="Animation" id=1]
 resource_name = "boton_creditos_open"
@@ -267,9 +268,8 @@ position = Vector2( -22.1243, 38.0888 )
 scale = Vector2( 0.822634, 0.827706 )
 texture = ExtResource( 2 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
-autoplay = true
 
 [node name="silencio" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -321,7 +321,7 @@ margin_bottom = 1597.0
 rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 7 )
 
-[node name="Audioplay" type="AudioStreamPlayer" parent="."]
+[node name="Audioplay" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
@@ -377,6 +377,8 @@ texture = ExtResource( 12 )
 [node name="jugar" type="Timer" parent="."]
 
 [node name="salir" type="Timer" parent="."]
+
+[node name="Node2D" parent="." instance=ExtResource( 13 )]
 [connection signal="pressed" from="silencio" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="quincho" to="." method="_on_quincho_pressed"]
 [connection signal="pressed" from="creditos" to="." method="_on_creditos_pressed"]

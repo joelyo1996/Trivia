@@ -20,7 +20,14 @@ func _ready():
 		$AnimationPlayer.play("salir")
 		$victoria.start()
 		
-	
+	if (new_script.trivia == 1):
+		$AnimationPlayer.play("trivia1")
+	if (new_script.tri2 == 2):
+		$AnimationPlayer2.play("trivia2")
+	if (new_script.tri3 == 2):
+		$AnimationPlayer3.play("trivia2")
+	if (new_script.tri4 == 2):
+		$AnimationPlayer4.play("trivia2")
  # Replace with function body.
 func _process(delta):
 	$Label.text="correctas total: "+ str(new_script.correctatotal)
@@ -104,6 +111,7 @@ func _on_trivia3_timeout():
 
 func _on_trivia4_timeout():
 	get_tree().change_scene("res://trivia1.tscn")
+	
 	pass # Replace with function body.
 
 
