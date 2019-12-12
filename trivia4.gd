@@ -64,10 +64,12 @@ func _on_Button12_pressed():
 	$Button12.queue_free()
 	$Button22.queue_free()
 	$Button32.queue_free()
+	correcta = correcta + 1
 	pass # Replace with function body.
 
 
 func _on_Button13_pressed():
+	$AnimationPlayer.play("preguta8")
 	$correcta.play()
 	$Timer.start()
 	$Button3.queue_free()
@@ -80,6 +82,7 @@ func _on_Button13_pressed():
 
 
 func _on_Button23_pressed():
+	$AnimationPlayer.play("preguta8")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button3.queue_free()
@@ -91,6 +94,7 @@ func _on_Button23_pressed():
 
 
 func _on_Button33_pressed():
+	$AnimationPlayer.play("preguta8")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button3.queue_free()
@@ -102,6 +106,7 @@ func _on_Button33_pressed():
 
 
 func _on_Button34_pressed():
+	$AnimationPlayer.play("preguta7")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button4.queue_free()
@@ -112,6 +117,7 @@ func _on_Button34_pressed():
 
 
 func _on_Button24_pressed():
+	$AnimationPlayer.play("preguta7")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button4.queue_free()
@@ -122,6 +128,7 @@ func _on_Button24_pressed():
 
 
 func _on_Button14_pressed():
+	$AnimationPlayer.play("preguta7")
 	$correcta.play()
 	$Timer.start()
 	$Button4.queue_free()
@@ -133,17 +140,7 @@ func _on_Button14_pressed():
 
 
 func _on_Button15_pressed():
-	$imcorrecta.play()
-	$Timer.start()
-	$Button5.queue_free()
-	$Button15.queue_free()
-	$Button25.queue_free()
-	$Button35.queue_free()
-	
-	pass # Replace with function body.
-
-
-func _on_Button25_pressed():
+	$AnimationPlayer.play("preguta6")
 	$correcta.play()
 	$Timer.start()
 	$Button5.queue_free()
@@ -154,7 +151,20 @@ func _on_Button25_pressed():
 	pass # Replace with function body.
 
 
+func _on_Button25_pressed():
+	$AnimationPlayer.play("preguta6")
+	$imcorrecta.play()
+	$Timer.start()
+	$Button5.queue_free()
+	$Button15.queue_free()
+	$Button25.queue_free()
+	$Button35.queue_free()
+	
+	pass # Replace with function body.
+
+
 func _on_Button35_pressed():
+	$AnimationPlayer.play("preguta6")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button5.queue_free()
@@ -165,6 +175,7 @@ func _on_Button35_pressed():
 
 
 func _on_Button36_pressed():
+	$AnimationPlayer.play("preguta5")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button6.queue_free()
@@ -175,6 +186,7 @@ func _on_Button36_pressed():
 
 
 func _on_Button26_pressed():
+	$AnimationPlayer.play("preguta5")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button6.queue_free()
@@ -185,6 +197,7 @@ func _on_Button26_pressed():
 
 
 func _on_Button16_pressed():
+	$AnimationPlayer.play("preguta5")
 	$correcta.play()
 	$Timer.start()
 	$Button6.queue_free()
@@ -196,27 +209,7 @@ func _on_Button16_pressed():
 
 
 func _on_Button17_pressed():
-	$imcorrecta.play()
-	$Timer.start()
-	$Button7.queue_free()
-	$Button17.queue_free()
-	$Button27.queue_free()
-	$Button37.queue_free()
-	
-	pass # Replace with function body.
-
-
-func _on_Button27_pressed():
-	$imcorrecta.play()
-	$Timer.start()
-	$Button7.queue_free()
-	$Button17.queue_free()
-	$Button27.queue_free()
-	$Button37.queue_free()
-	pass # Replace with function body.
-
-
-func _on_Button37_pressed():
+	$AnimationPlayer.play("preguta4")
 	$correcta.play()
 	$Timer.start()
 	$Button7.queue_free()
@@ -227,7 +220,31 @@ func _on_Button37_pressed():
 	pass # Replace with function body.
 
 
+func _on_Button27_pressed():
+	$AnimationPlayer.play("preguta4")
+	$imcorrecta.play()
+	$Timer.start()
+	$Button7.queue_free()
+	$Button17.queue_free()
+	$Button27.queue_free()
+	$Button37.queue_free()
+	pass # Replace with function body.
+
+
+func _on_Button37_pressed():
+	$AnimationPlayer.play("preguta4")
+	$imcorrecta.play()
+	$Timer.start()
+	$Button7.queue_free()
+	$Button17.queue_free()
+	$Button27.queue_free()
+	$Button37.queue_free()
+	
+	pass # Replace with function body.
+
+
 func _on_Button38_pressed():
+	$AnimationPlayer.play("preguta3")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button8.queue_free()
@@ -238,6 +255,7 @@ func _on_Button38_pressed():
 
 
 func _on_Button28_pressed():
+	$AnimationPlayer.play("preguta3")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button8.queue_free()
@@ -248,6 +266,7 @@ func _on_Button28_pressed():
 
 
 func _on_Button18_pressed():
+	$AnimationPlayer.play("preguta3")
 	$correcta.play()
 	$Timer.start()
 	$Button8.queue_free()
@@ -259,27 +278,31 @@ func _on_Button18_pressed():
 
 
 func _on_Button19_pressed():
-	$imcorrecta.play()
-	$Timer.start()
-	$Button9.queue_free()
-	$Button19.queue_free()
-	$Button29.queue_free()
-	$Button39.queue_free()
-	pass # Replace with function body.
-
-
-func _on_Button29_pressed():
+	$AnimationPlayer.play("preguta2")
 	$correcta.play()
 	$Timer.start()
 	$Button9.queue_free()
 	$Button19.queue_free()
 	$Button29.queue_free()
 	$Button39.queue_free()
-	correcta=correcta+1
+	correcta = correcta + 1
+	pass # Replace with function body.
+
+
+func _on_Button29_pressed():
+	$AnimationPlayer.play("preguta2")
+	$imcorrecta.play()
+	$Timer.start()
+	$Button9.queue_free()
+	$Button19.queue_free()
+	$Button29.queue_free()
+	$Button39.queue_free()
+	
 	pass # Replace with function body.
 
 
 func _on_Button39_pressed():
+	$AnimationPlayer.play("preguta2")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button9.queue_free()
@@ -290,6 +313,7 @@ func _on_Button39_pressed():
 
 
 func _on_Button40_pressed():
+	$AnimationPlayer.play("preguta1")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button10.queue_free()
@@ -300,6 +324,7 @@ func _on_Button40_pressed():
 
 
 func _on_Button30_pressed():
+	$AnimationPlayer.play("preguta1")
 	$imcorrecta.play()
 	$Timer.start()
 	$Button10.queue_free()
@@ -310,6 +335,7 @@ func _on_Button30_pressed():
 
 
 func _on_Button20_pressed():
+	$AnimationPlayer.play("preguta1")
 	$correcta.play()
 	$Timer.start()
 	$Button10.queue_free()

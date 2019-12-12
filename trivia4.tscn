@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://trivia4.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/fodovosque.png" type="Texture" id=2]
@@ -10,6 +10,16 @@
 [ext_resource path="res://asset/musica/jefe4.ogg" type="AudioStream" id=8]
 [ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
 [ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 1.png" type="Texture" id=11]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 2.png" type="Texture" id=12]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 3.png" type="Texture" id=13]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 4.png" type="Texture" id=14]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 5.png" type="Texture" id=15]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 6.png" type="Texture" id=16]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 7.png" type="Texture" id=17]
+[ext_resource path="res://asset/Imagenes/jose/pre jose 8.png" type="Texture" id=18]
+[ext_resource path="res://asset/Imagenes/verde.png" type="Texture" id=19]
+[ext_resource path="res://asset/Imagenes/rojo.png" type="Texture" id=20]
 
 [sub_resource type="DynamicFont" id=1]
 outline_color = Color( 0.843137, 0.109804, 0.109804, 1 )
@@ -114,7 +124,518 @@ font_data = ExtResource( 4 )
 font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=34]
-resource_name = "salir"
+resource_name = "preguta1"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("preguta1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("preguta2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("verdadero1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("falso2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("falso3:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "preguta2"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("preguta2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("preguta3:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("verdadero1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("falso2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("falso3:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_name = "preguta3"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("preguta3:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("preguta4:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("verdadero1:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("falso2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("falso3:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "preguta4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("preguta4:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("verdadero1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("falso2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("falso3:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("preguta5:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_name = "preguta5"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("verdadero1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("falso2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("falso3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("preguta5:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("preguta6:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "preguta6"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("verdadero1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("falso2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("falso3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("preguta6:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("preguta7:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "preguta7"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("verdadero1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("falso2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("falso3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("preguta7:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("preguta8:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "preguta8"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("verdadero1:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("falso2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("falso3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("preguta8:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Button11:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=42]
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
@@ -142,6 +663,7 @@ scale = Vector2( 0.143186, 0.194921 )
 texture = ExtResource( 3 )
 
 [node name="Button11" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 503.0
 margin_top = 37.0
 margin_right = 1026.0
@@ -150,6 +672,7 @@ custom_fonts/font = SubResource( 1 )
 text = "TERMINASTE LA TRIVIA, COTIUA CO LAS OTRAS"
 
 [node name="Button3" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 501.0
 margin_top = 37.0
 margin_right = 1024.0
@@ -158,6 +681,7 @@ custom_fonts/font = SubResource( 2 )
 text = "¿Cuál es el peor modelo de monetización?"
 
 [node name="Button4" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 502.0
 margin_top = 37.0
 margin_right = 1025.0
@@ -166,6 +690,7 @@ custom_fonts/font = SubResource( 3 )
 text = " ADVA es…"
 
 [node name="Button5" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 503.0
 margin_top = 37.0
 margin_right = 1025.0
@@ -174,6 +699,7 @@ custom_fonts/font = SubResource( 4 )
 text = "Un GDD es…"
 
 [node name="Button6" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 506.0
 margin_top = 37.0
 margin_right = 1025.0
@@ -182,6 +708,7 @@ custom_fonts/font = SubResource( 5 )
 text = "Un high concept sirve para"
 
 [node name="Button7" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 502.0
 margin_top = 37.0
 margin_right = 1025.0
@@ -190,6 +717,7 @@ custom_fonts/font = SubResource( 6 )
 text = "La estructura MDA corresponde a…"
 
 [node name="Button8" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 505.0
 margin_top = 37.0
 margin_right = 1025.0
@@ -198,6 +726,7 @@ custom_fonts/font = SubResource( 7 )
 text = " ¿Quién es Toru Iwatani?"
 
 [node name="Button9" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 503.0
 margin_top = 36.0
 margin_right = 1028.0
@@ -206,6 +735,7 @@ custom_fonts/font = SubResource( 8 )
 text = "¿Cuál fue el primer éxito de Nintendo?"
 
 [node name="Button10" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 503.0
 margin_top = 37.0
 margin_right = 1025.0
@@ -214,70 +744,79 @@ custom_fonts/font = SubResource( 1 )
 text = "¿A qué se considera una mecánica?"
 
 [node name="Button13" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 508.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 9 )
 text = " Free con publicidades in game"
 
 [node name="Button14" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 509.0
-margin_top = 242.0
+margin_top = 282.436
 margin_right = 1026.0
-margin_bottom = 302.0
+margin_bottom = 342.436
 custom_fonts/font = SubResource( 10 )
 text = "Asociación de Desarrolladores de VJ de Argentina"
 
 [node name="Button15" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 505.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 11 )
 text = " Un documento de programación"
 
 [node name="Button16" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 505.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 12 )
 text = "Definir el concepto del juego"
 
 [node name="Button17" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 506.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 13 )
 text = "Mecánicas, dinámicas y automatización"
 
 [node name="Button18" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 505.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 14 )
 text = "Creador de Pacman"
 
 [node name="Button19" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 507.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 15 )
 text = "Super Mario Bros"
 
 [node name="Button20" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 506.0
-margin_top = 241.0
+margin_top = 281.436
 margin_right = 1025.0
-margin_bottom = 301.0
+margin_bottom = 341.436
 custom_fonts/font = SubResource( 16 )
 text = " Reglas de juego"
 
 [node name="Button23" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 513.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -286,6 +825,7 @@ custom_fonts/font = SubResource( 17 )
 text = "Microtransacciones / Loot boxes"
 
 [node name="Button24" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 510.166
 margin_top = 365.0
 margin_right = 1022.17
@@ -294,6 +834,7 @@ custom_fonts/font = SubResource( 18 )
 text = "Asociación de Desarrolladores Audiovisuales"
 
 [node name="Button25" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 514.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -302,6 +843,7 @@ custom_fonts/font = SubResource( 19 )
 text = "Un documento de diseño de juego"
 
 [node name="Button26" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 514.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -310,6 +852,7 @@ custom_fonts/font = SubResource( 20 )
 text = "Vender el juego"
 
 [node name="Button27" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 512.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -318,6 +861,7 @@ custom_fonts/font = SubResource( 21 )
 text = "Mecánicas, dinámicas y audio"
 
 [node name="Button28" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 511.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -326,6 +870,7 @@ custom_fonts/font = SubResource( 22 )
 text = "Creador de Super Mario Bros"
 
 [node name="Button29" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 513.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -334,6 +879,7 @@ custom_fonts/font = SubResource( 23 )
 text = "Donkey Kong"
 
 [node name="Button30" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 margin_left = 512.0
 margin_top = 365.0
 margin_right = 1022.0
@@ -342,66 +888,74 @@ custom_fonts/font = SubResource( 24 )
 text = "Música de juego"
 
 [node name="Button33" type="Button" parent="."]
-margin_left = 514.0
-margin_top = 483.0
-margin_right = 1024.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 505.21
+margin_top = 458.387
+margin_right = 1015.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 25 )
 text = "Piratería"
 
 [node name="Button34" type="Button" parent="."]
-margin_left = 513.0
-margin_top = 484.0
-margin_right = 1027.0
-margin_bottom = 544.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 504.21
+margin_top = 459.387
+margin_right = 1018.21
+margin_bottom = 519.387
 custom_fonts/font = SubResource( 26 )
 text = "Asociación de Creación de Estudios de Argentina"
 
 [node name="Button35" type="Button" parent="."]
-margin_left = 512.0
-margin_top = 483.0
-margin_right = 1023.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 503.21
+margin_top = 458.387
+margin_right = 1014.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 27 )
 text = "Un documento de la Game Developers"
 
 [node name="Button36" type="Button" parent="."]
-margin_left = 512.0
-margin_top = 483.0
-margin_right = 1024.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 503.21
+margin_top = 458.387
+margin_right = 1015.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 28 )
 text = "Programar el juego"
 
 [node name="Button37" type="Button" parent="."]
-margin_left = 513.0
-margin_top = 483.0
-margin_right = 1024.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 504.21
+margin_top = 458.387
+margin_right = 1015.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 29 )
 text = " Mecánicas, dinámicas y estéticas"
 
 [node name="Button38" type="Button" parent="."]
-margin_left = 512.0
-margin_top = 483.0
-margin_right = 1024.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 503.21
+margin_top = 458.387
+margin_right = 1015.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 30 )
 text = "Creador de Metal Gear"
 
 [node name="Button39" type="Button" parent="."]
-margin_left = 514.0
-margin_top = 483.0
-margin_right = 1024.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 505.21
+margin_top = 458.387
+margin_right = 1015.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 31 )
 text = "Pokémon"
 
 [node name="Button40" type="Button" parent="."]
-margin_left = 514.0
-margin_top = 483.0
-margin_right = 1024.0
-margin_bottom = 543.0
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 505.21
+margin_top = 458.387
+margin_right = 1015.21
+margin_bottom = 518.387
 custom_fonts/font = SubResource( 32 )
 text = "Mujer que repara autos"
 
@@ -422,7 +976,7 @@ position = Vector2( 383.287, 462.121 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
-volume_db = -21.204
+volume_db = -11.106
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
@@ -441,7 +995,15 @@ stream = ExtResource( 10 )
 [node name="Timer" type="Timer" parent="."]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/salir = SubResource( 34 )
+anims/preguta1 = SubResource( 34 )
+anims/preguta2 = SubResource( 35 )
+anims/preguta3 = SubResource( 36 )
+anims/preguta4 = SubResource( 37 )
+anims/preguta5 = SubResource( 38 )
+anims/preguta6 = SubResource( 39 )
+anims/preguta7 = SubResource( 40 )
+anims/preguta8 = SubResource( 41 )
+anims/salir = SubResource( 42 )
 
 [node name="salir" type="Timer" parent="."]
 
@@ -449,6 +1011,91 @@ anims/salir = SubResource( 34 )
 position = Vector2( 41.3475, 545.277 )
 scale = Vector2( 0.117322, 0.125346 )
 texture = ExtResource( 5 )
+
+[node name="preguta1" type="Sprite" parent="."]
+position = Vector2( 810.793, 310.788 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 11 )
+
+[node name="preguta2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 12 )
+
+[node name="preguta3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 13 )
+
+[node name="preguta4" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 14 )
+
+[node name="preguta5" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 15 )
+
+[node name="preguta6" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 16 )
+
+[node name="preguta7" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 17 )
+
+[node name="preguta8" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 807.277, 307.272 )
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 18 )
+
+[node name="verdadero1" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -462.575, 175.728 )
+rotation = 0.00102402
+scale = Vector2( 0.822862, 0.845635 )
+texture = ExtResource( 19 )
+offset = Vector2( 1547.49, 159.714 )
+
+[node name="verdadero2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 812.238, 411.393 )
+rotation = -0.0395302
+texture = ExtResource( 19 )
+
+[node name="verdadero3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 822.786, 495.781 )
+rotation = -0.0395302
+texture = ExtResource( 19 )
+
+[node name="falso1" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 806.963, 307.666 )
+rotation = -0.0395302
+texture = ExtResource( 20 )
+
+[node name="falso2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 821.028, 402.603 )
+rotation = -0.0395302
+texture = ExtResource( 20 )
+
+[node name="falso3" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 828.06, 485.233 )
+rotation = -0.0395302
+texture = ExtResource( 20 )
 [connection signal="pressed" from="Button11" to="." method="_on_Button11_pressed"]
 [connection signal="pressed" from="Button13" to="." method="_on_Button13_pressed"]
 [connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]
