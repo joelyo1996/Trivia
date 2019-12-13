@@ -1,7 +1,7 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://mapa.gd" type="Script" id=1]
-[ext_resource path="res://asset/Imagenes/czcfdfazxczxcRecuperado.png" type="Texture" id=2]
+[ext_resource path="res://asset/Imagenes/mapa411.png" type="Texture" id=2]
 [ext_resource path="res://asset/Imagenes/barco.png" type="Texture" id=3]
 [ext_resource path="res://asset/Imagenes/descarga.png" type="Texture" id=4]
 [ext_resource path="res://asset/Imagenes/Vigiaa.png" type="Texture" id=5]
@@ -12,9 +12,10 @@
 [ext_resource path="res://asset/Imagenes/caballero.png" type="Texture" id=10]
 [ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=11]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=12]
-[ext_resource path="res://asset/Imagenes/vosque.png" type="Texture" id=13]
-[ext_resource path="res://asset/Imagenes/varco.png" type="Texture" id=14]
-[ext_resource path="res://asset/Imagenes/torre1.png" type="Texture" id=15]
+[ext_resource path="res://asset/Imagenes/isla 1.png" type="Texture" id=13]
+[ext_resource path="res://asset/Imagenes/isla2.png" type="Texture" id=14]
+[ext_resource path="res://asset/Imagenes/isla3.png" type="Texture" id=15]
+[ext_resource path="res://asset/Imagenes/isla4.png" type="Texture" id=16]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -120,7 +121,7 @@ tracks/5/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 resource_name = "trivia1"
 tracks/0/type = "value"
 tracks/0/path = NodePath("varco:modulate")
@@ -130,54 +131,54 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0.00825299, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "trivia2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("cavera:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=6]
-resource_name = "trivia2"
+resource_name = "Nueva animación"
 tracks/0/type = "value"
-tracks/0/path = NodePath("cavera:modulate")
+tracks/0/path = NodePath("Sprite:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Node2D2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.00751573, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=7]
-resource_name = "Nueva animación"
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray(  ),
-"transitions": PoolRealArray(  ),
-"update": 1,
-"values": [  ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Node2D2:modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.00751573, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
-}
-
-[sub_resource type="Animation" id=8]
 resource_name = "salir"
 tracks/0/type = "value"
 tracks/0/path = NodePath("fondo:modulate")
@@ -252,7 +253,7 @@ tracks/5/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=8]
 resource_name = "trivia1"
 tracks/0/type = "value"
 tracks/0/path = NodePath("varco:modulate")
@@ -267,7 +268,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=9]
 resource_name = "trivia2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("cavera:modulate")
@@ -282,7 +283,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=10]
 resource_name = "Nueva animación"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:visible")
@@ -309,7 +310,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=11]
 resource_name = "salir"
 tracks/0/type = "value"
 tracks/0/path = NodePath("fondo:modulate")
@@ -384,7 +385,7 @@ tracks/5/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=12]
 resource_name = "trivia1"
 tracks/0/type = "value"
 tracks/0/path = NodePath("varco:modulate")
@@ -399,7 +400,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=13]
 resource_name = "trivia2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("vigia:modulate")
@@ -414,7 +415,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=14]
 resource_name = "Nueva animación"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:visible")
@@ -441,7 +442,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=15]
 resource_name = "salir"
 tracks/0/type = "value"
 tracks/0/path = NodePath("fondo:modulate")
@@ -516,7 +517,7 @@ tracks/5/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=16]
 resource_name = "trivia1"
 tracks/0/type = "value"
 tracks/0/path = NodePath("varco:modulate")
@@ -531,7 +532,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=17]
 resource_name = "trivia2"
 tracks/0/type = "value"
 tracks/0/path = NodePath("vosque:modulate")
@@ -546,7 +547,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=18]
 size = 20
 font_data = ExtResource( 12 )
 
@@ -561,38 +562,38 @@ texture = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 667.926
-margin_top = 320.33
-margin_right = 2215.93
-margin_bottom = 2886.33
+margin_left = 798.033
+margin_top = 350.477
+margin_right = 2346.04
+margin_bottom = 2916.48
 rect_scale = Vector2( 0.15, 0.1 )
 custom_fonts/font = SubResource( 1 )
 icon = ExtResource( 3 )
 
 [node name="Button2" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 384.0
+margin_left = 317.0
 margin_top = 5.0
-margin_right = 1932.0
-margin_bottom = 2571.0
+margin_right = 3578.0
+margin_bottom = 3555.0
 rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 4 )
 
 [node name="Button3" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 856.0
+margin_left = 715.0
 margin_top = 7.0
-margin_right = 2479.0
+margin_right = 3750.0
 margin_bottom = 2573.0
 rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 5 )
 
 [node name="Button4" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = -0.571076
-margin_top = 103.536
-margin_right = 1547.43
-margin_bottom = 2669.54
+margin_left = -1.0
+margin_top = 104.0
+margin_right = 2023.0
+margin_bottom = 4082.0
 rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 6 )
 
@@ -609,26 +610,26 @@ position = Vector2( 320.752, 437.552 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Nueva animación" = SubResource( 2 )
 anims/salir = SubResource( 3 )
-anims/trivia1 = SubResource( 5 )
-anims/trivia2 = SubResource( 6 )
+anims/trivia1 = SubResource( 4 )
+anims/trivia2 = SubResource( 5 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
-"anims/Nueva animación" = SubResource( 7 )
-anims/salir = SubResource( 8 )
-anims/trivia1 = SubResource( 9 )
-anims/trivia2 = SubResource( 10 )
+"anims/Nueva animación" = SubResource( 6 )
+anims/salir = SubResource( 7 )
+anims/trivia1 = SubResource( 8 )
+anims/trivia2 = SubResource( 9 )
 
 [node name="AnimationPlayer3" type="AnimationPlayer" parent="."]
-"anims/Nueva animación" = SubResource( 11 )
-anims/salir = SubResource( 12 )
-anims/trivia1 = SubResource( 13 )
-anims/trivia2 = SubResource( 14 )
+"anims/Nueva animación" = SubResource( 10 )
+anims/salir = SubResource( 11 )
+anims/trivia1 = SubResource( 12 )
+anims/trivia2 = SubResource( 13 )
 
 [node name="AnimationPlayer4" type="AnimationPlayer" parent="."]
-"anims/Nueva animación" = SubResource( 15 )
-anims/salir = SubResource( 16 )
-anims/trivia1 = SubResource( 17 )
-anims/trivia2 = SubResource( 18 )
+"anims/Nueva animación" = SubResource( 14 )
+anims/salir = SubResource( 15 )
+anims/trivia1 = SubResource( 16 )
+anims/trivia2 = SubResource( 17 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1103.18, 340.998 )
@@ -648,7 +649,7 @@ icon = ExtResource( 11 )
 modulate = Color( 1, 1, 1, 0.979877 )
 margin_right = 138.0
 margin_bottom = 50.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 18 )
 
 [node name="salir" type="Sprite" parent="."]
 position = Vector2( 55.4017, 554.017 )
@@ -668,28 +669,28 @@ texture = ExtResource( 11 )
 [node name="atras2" type="Timer" parent="."]
 
 [node name="vosque" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0.0354808 )
-position = Vector2( 80.3435, 188.004 )
-scale = Vector2( 0.125578, 0.133443 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 584.905, 298.278 )
+scale = Vector2( 0.4801, 0.394789 )
 texture = ExtResource( 13 )
 
 [node name="cavera" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 463.423, 89.5832 )
-scale = Vector2( 0.0918885, 0.0673274 )
-texture = ExtResource( 4 )
+position = Vector2( 529.27, 305.371 )
+scale = Vector2( 0.456947, 0.428874 )
+texture = ExtResource( 14 )
 
 [node name="varco" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 775.433, 420.499 )
-scale = Vector2( 0.188238, 0.140235 )
-texture = ExtResource( 14 )
+position = Vector2( 464.445, 296.739 )
+scale = Vector2( 0.493176, 0.405507 )
+texture = ExtResource( 15 )
 
 [node name="vigia" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0.014122 )
-position = Vector2( 939.636, 93.1794 )
-scale = Vector2( 0.130683, 0.104046 )
-texture = ExtResource( 15 )
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 482.675, 330.387 )
+scale = Vector2( 0.487684, 0.448031 )
+texture = ExtResource( 16 )
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
