@@ -113,7 +113,7 @@ func _on_Button34_pressed():
 	$Button25.queue_free()
 	$Button34.queue_free()
 	
-	correcta=correcta+1
+	
 	pass # Replace with function body.
 
 
@@ -136,6 +136,7 @@ func _on_Button16_pressed():
 	$Button16.queue_free()
 	$Button25.queue_free()
 	$Button34.queue_free()
+	correcta=correcta+1
 	pass # Replace with function body.
 
 

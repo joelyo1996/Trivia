@@ -1,28 +1,29 @@
-[gd_scene load_steps=85 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://trivia1.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/navegante1.png" type="Texture" id=2]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://maga.tscn" type="PackedScene" id=4]
-[ext_resource path="res://guerrero.tscn" type="PackedScene" id=5]
-[ext_resource path="res://asset/Imagenes/nacho.png" type="Texture" id=6]
-[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=7]
-[ext_resource path="res://asset/musica/jefe1.ogg" type="AudioStream" id=8]
-[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
-[ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
-[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=11]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 1.png" type="Texture" id=12]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 2.png" type="Texture" id=13]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 3.png" type="Texture" id=14]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 4.png" type="Texture" id=15]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 5.png" type="Texture" id=16]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 6.png" type="Texture" id=17]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 7.png" type="Texture" id=18]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 8.png" type="Texture" id=19]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 9.png" type="Texture" id=20]
-[ext_resource path="res://asset/Imagenes/nacho/pre nacho 10.png" type="Texture" id=21]
-[ext_resource path="res://asset/Imagenes/rojo.png" type="Texture" id=22]
-[ext_resource path="res://asset/Imagenes/verde.png" type="Texture" id=23]
+[ext_resource path="res://asset/Imagenes/holajs.png" type="Texture" id=4]
+[ext_resource path="res://maga.tscn" type="PackedScene" id=5]
+[ext_resource path="res://guerrero.tscn" type="PackedScene" id=6]
+[ext_resource path="res://asset/Imagenes/nacho.png" type="Texture" id=7]
+[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=8]
+[ext_resource path="res://asset/musica/jefe1.ogg" type="AudioStream" id=9]
+[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=11]
+[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=12]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 1.png" type="Texture" id=13]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 2.png" type="Texture" id=14]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 3.png" type="Texture" id=15]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 4.png" type="Texture" id=16]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 5.png" type="Texture" id=17]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 6.png" type="Texture" id=18]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 7.png" type="Texture" id=19]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 8.png" type="Texture" id=20]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 9.png" type="Texture" id=21]
+[ext_resource path="res://asset/Imagenes/nacho/pre nacho 10.png" type="Texture" id=22]
+[ext_resource path="res://asset/Imagenes/rojo.png" type="Texture" id=23]
+[ext_resource path="res://asset/Imagenes/verde.png" type="Texture" id=24]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 3 )
@@ -187,7 +188,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=61]
+[sub_resource type="Animation" id=51]
 resource_name = "pregumta10"
 length = 2.0
 tracks/0/type = "value"
@@ -239,7 +240,7 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Button33:modulate")
+tracks/4/path = NodePath("premio:modulate")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -251,7 +252,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=53]
+[sub_resource type="Animation" id=52]
 resource_name = "pregumta2"
 length = 2.0
 tracks/0/type = "value"
@@ -315,7 +316,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=54]
+[sub_resource type="Animation" id=53]
 resource_name = "pregumta3"
 length = 2.0
 tracks/0/type = "value"
@@ -379,7 +380,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=55]
+[sub_resource type="Animation" id=54]
 resource_name = "pregumta4"
 length = 2.0
 tracks/0/type = "value"
@@ -443,7 +444,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=56]
+[sub_resource type="Animation" id=55]
 resource_name = "pregumta5"
 length = 2.0
 tracks/0/type = "value"
@@ -507,7 +508,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=57]
+[sub_resource type="Animation" id=56]
 resource_name = "pregumta6"
 length = 2.0
 tracks/0/type = "value"
@@ -571,7 +572,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=58]
+[sub_resource type="Animation" id=57]
 resource_name = "pregumta7"
 length = 2.0
 tracks/0/type = "value"
@@ -635,7 +636,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=59]
+[sub_resource type="Animation" id=58]
 resource_name = "pregumta8"
 length = 2.0
 tracks/0/type = "value"
@@ -699,7 +700,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=60]
+[sub_resource type="Animation" id=59]
 resource_name = "pregumta9"
 length = 2.0
 tracks/0/type = "value"
@@ -763,8 +764,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=51]
-resource_name = "preguta1"
+[sub_resource type="Animation" id=60]
 length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("preguta1:modulate")
@@ -827,7 +827,7 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[sub_resource type="Animation" id=52]
+[sub_resource type="Animation" id=61]
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
@@ -859,6 +859,12 @@ margin_right = 1023.0
 margin_bottom = 251.0
 custom_fonts/font = SubResource( 1 )
 text = "TERMINASTE LA TRIVIA, CONTINÚA CON LAS OTRAS"
+
+[node name="premio" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 678.731, 227.611 )
+scale = Vector2( 0.9, 0.9 )
+texture = ExtResource( 4 )
 
 [node name="Button30" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -1222,37 +1228,37 @@ custom_fonts/font = SubResource( 48 )
 text = "Es un dibujo a mano del auto de volver al futuro."
 
 [node name="Label" type="Label" parent="."]
-margin_left = 703.147
-margin_top = 6.68074
-margin_right = 798.147
+margin_left = 300.0
+margin_top = 6.681
+margin_right = 395.0
 margin_bottom = 115.68
 custom_fonts/font = SubResource( 49 )
 
-[node name="Node2D" parent="." instance=ExtResource( 4 )]
+[node name="Node2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 344.585, 432.49 )
 
-[node name="Node2D2" parent="." instance=ExtResource( 5 )]
+[node name="Node2D2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 322.433, 447.873 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/guerrero = SubResource( 50 )
-anims/pregumta10 = SubResource( 61 )
-anims/pregumta2 = SubResource( 53 )
-anims/pregumta3 = SubResource( 54 )
-anims/pregumta4 = SubResource( 55 )
-anims/pregumta5 = SubResource( 56 )
-anims/pregumta6 = SubResource( 57 )
-anims/pregumta7 = SubResource( 58 )
-anims/pregumta8 = SubResource( 59 )
-anims/pregumta9 = SubResource( 60 )
-anims/preguta1 = SubResource( 51 )
-anims/salir = SubResource( 52 )
+anims/pregumta10 = SubResource( 51 )
+anims/pregumta2 = SubResource( 52 )
+anims/pregumta3 = SubResource( 53 )
+anims/pregumta4 = SubResource( 54 )
+anims/pregumta5 = SubResource( 55 )
+anims/pregumta6 = SubResource( 56 )
+anims/pregumta7 = SubResource( 57 )
+anims/pregumta8 = SubResource( 58 )
+anims/pregumta9 = SubResource( 59 )
+anims/preguta1 = SubResource( 60 )
+anims/salir = SubResource( 61 )
 
 [node name="nacho" type="Sprite" parent="."]
 position = Vector2( 130.109, 339.6 )
 scale = Vector2( 0.181473, 0.273885 )
-texture = ExtResource( 6 )
-normal_map = ExtResource( 6 )
+texture = ExtResource( 7 )
+normal_map = ExtResource( 7 )
 
 [node name="atras" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -1261,116 +1267,116 @@ margin_top = 494.814
 margin_right = 851.165
 margin_bottom = 1455.81
 rect_scale = Vector2( 0.1, 0.1 )
-icon = ExtResource( 7 )
+icon = ExtResource( 8 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 9 )
 volume_db = -11.107
 autoplay = true
 
 [node name="correcta" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 10 )
 
 [node name="imcorrecta" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
+stream = ExtResource( 11 )
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 47.5368, 542.901 )
 scale = Vector2( 0.651138, 0.551054 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 
 [node name="salir" type="Timer" parent="."]
 
 [node name="preguta1" type="Sprite" parent="."]
 position = Vector2( 766.364, 304.642 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 
 [node name="preguta2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 766.364, 304.642 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 
 [node name="preguta3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 767.871, 304.642 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="preguta4" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 767.871, 304.642 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 
 [node name="preguta5" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 766.364, 309.164 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="preguta6" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 766.364, 309.164 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 
 [node name="preguta7" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 766.364, 309.164 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 
 [node name="preguta8" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 766.364, 309.164 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 
 [node name="preguta9" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 766.364, 309.164 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="preguta10" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-position = Vector2( 766.364, 309.164 )
+position = Vector2( 768.415, 305.063 )
 scale = Vector2( 1, 0.84574 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 
 [node name="opcfal" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 776.28, 309.005 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="opcfal2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 773.266, 402.46 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="opcfal3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 773.266, 488.378 )
-texture = ExtResource( 22 )
+texture = ExtResource( 23 )
 
 [node name="opcverl3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 777.788, 491.393 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="opcverl" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 771.758, 321.064 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 
 [node name="opcverl2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 773.266, 402.46 )
-texture = ExtResource( 23 )
+texture = ExtResource( 24 )
 [connection signal="pressed" from="Button33" to="." method="_on_Button33_pressed"]
 [connection signal="pressed" from="Button27" to="." method="_on_Button27_pressed"]
 [connection signal="pressed" from="Button32" to="." method="_on_Button32_pressed"]

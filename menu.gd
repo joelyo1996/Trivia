@@ -17,7 +17,7 @@ func _ready():
 
 func _on_Button_pressed():
 	$Audioplay.stop()
-	$AudioStreamPlayer.queue_free()
+	$AudioStreamPlayer.stop()
 	$AnimationPlayer2.play("silencio")
 	pass # Replace with function body.
 

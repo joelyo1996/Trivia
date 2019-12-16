@@ -1,127 +1,128 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://trivia2.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/mazmorra.png" type="Texture" id=2]
 [ext_resource path="res://asset/Imagenes/berna.png" type="Texture" id=3]
-[ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=5]
-[ext_resource path="res://guerrero.tscn" type="PackedScene" id=6]
-[ext_resource path="res://maga.tscn" type="PackedScene" id=7]
-[ext_resource path="res://asset/musica/jefe2.ogg" type="AudioStream" id=8]
-[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=9]
-[ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=10]
-[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=11]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 1.png" type="Texture" id=12]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 2.png" type="Texture" id=13]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 3.png" type="Texture" id=14]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 4.png" type="Texture" id=15]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 5.png" type="Texture" id=16]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 6.png" type="Texture" id=17]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 7.png" type="Texture" id=18]
-[ext_resource path="res://asset/Imagenes/berna/berna pre 8.png" type="Texture" id=19]
-[ext_resource path="res://asset/Imagenes/rojo.png" type="Texture" id=20]
-[ext_resource path="res://asset/Imagenes/verde.png" type="Texture" id=21]
+[ext_resource path="res://asset/Imagenes/jdlsauns.png" type="Texture" id=4]
+[ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=6]
+[ext_resource path="res://guerrero.tscn" type="PackedScene" id=7]
+[ext_resource path="res://maga.tscn" type="PackedScene" id=8]
+[ext_resource path="res://asset/musica/jefe2.ogg" type="AudioStream" id=9]
+[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=10]
+[ext_resource path="res://asset/musica/incorrecto.ogg" type="AudioStream" id=11]
+[ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=12]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 1.png" type="Texture" id=13]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 2.png" type="Texture" id=14]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 3.png" type="Texture" id=15]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 4.png" type="Texture" id=16]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 5.png" type="Texture" id=17]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 6.png" type="Texture" id=18]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 7.png" type="Texture" id=19]
+[ext_resource path="res://asset/Imagenes/berna/berna pre 8.png" type="Texture" id=20]
+[ext_resource path="res://asset/Imagenes/rojo.png" type="Texture" id=21]
+[ext_resource path="res://asset/Imagenes/verde.png" type="Texture" id=22]
 
 [sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=2]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=3]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=4]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=5]
 size = 15
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=6]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=7]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=8]
 size = 15
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=9]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=10]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=11]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=12]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=13]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=14]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=15]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=16]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=17]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=18]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=19]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=20]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=21]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=22]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=23]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=24]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=25]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=26]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=27]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=28]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=29]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=30]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=31]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=32]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFont" id=33]
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="Animation" id=34]
 resource_name = "preguta1"
@@ -389,7 +390,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.0237734, 1, 2 ),
+"times": PoolRealArray( 0.0237734, 1, 1.9 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -663,14 +664,11 @@ position = Vector2( 252.999, 306.471 )
 scale = Vector2( 0.259209, 0.323738 )
 texture = ExtResource( 3 )
 
-[node name="Button14" type="Button" parent="."]
+[node name="Button14" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 501.0
-margin_top = 71.0
-margin_right = 1023.0
-margin_bottom = 215.0
-custom_fonts/font = SubResource( 1 )
-text = "TERMINASTE LA TRIVIA, COTInUA COn LAS OTRAS"
+position = Vector2( 752.057, 188.582 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 4 )
 
 [node name="Button6" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -998,24 +996,24 @@ margin_top = 504.958
 margin_right = 857.507
 margin_bottom = 1465.96
 rect_scale = Vector2( 0.1, 0.1 )
-icon = ExtResource( 5 )
+icon = ExtResource( 6 )
 
-[node name="Node2D" parent="." instance=ExtResource( 6 )]
+[node name="Node2D" parent="." instance=ExtResource( 7 )]
 position = Vector2( 480.84, 459.738 )
 
-[node name="Node2D2" parent="." instance=ExtResource( 7 )]
+[node name="Node2D2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 494.406, 441.65 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 9 )
 volume_db = -18.175
 autoplay = true
 
 [node name="correcta" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 10 )
 
 [node name="imcorrecta" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
+stream = ExtResource( 11 )
 
 [node name="Timer" type="Timer" parent="."]
 
@@ -1035,85 +1033,84 @@ anims/salir = SubResource( 42 )
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 63.2969, 546.868 )
 scale = Vector2( 0.731653, 0.592374 )
-texture = ExtResource( 11 )
+texture = ExtResource( 12 )
 
 [node name="preguta" type="Sprite" parent="."]
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 12 )
+texture = ExtResource( 13 )
 
 [node name="preguta2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 13 )
+texture = ExtResource( 14 )
 
 [node name="preguta3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 14 )
+texture = ExtResource( 15 )
 
 [node name="preguta4" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 15 )
+texture = ExtResource( 16 )
 
 [node name="preguta5" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 16 )
+texture = ExtResource( 17 )
 
 [node name="preguta6" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 17 )
+texture = ExtResource( 18 )
 
 [node name="preguta7" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 18 )
+texture = ExtResource( 19 )
 
 [node name="preguta8" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 804.004, 300.149 )
 scale = Vector2( 0.842682, 0.81279 )
-texture = ExtResource( 19 )
+texture = ExtResource( 20 )
 
 [node name="falsa" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 814.794, 299.283 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="falsa2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 813.362, 392.361 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="falsa3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 814.793, 476.848 )
-texture = ExtResource( 20 )
+texture = ExtResource( 21 )
 
 [node name="verdadera" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 814.794, 302.147 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 
 [node name="verdadera2" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 814.793, 396.657 )
-texture = ExtResource( 21 )
+texture = ExtResource( 22 )
 
 [node name="verdadera3" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 814.793, 481.143 )
-texture = ExtResource( 21 )
-[connection signal="pressed" from="Button14" to="." method="_on_Button14_pressed"]
+texture = ExtResource( 22 )
 [connection signal="pressed" from="Button15" to="." method="_on_Button15_pressed"]
 [connection signal="pressed" from="Button16" to="." method="_on_Button16_pressed"]
 [connection signal="pressed" from="Button17" to="." method="_on_Button17_pressed"]
