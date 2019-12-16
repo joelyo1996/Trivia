@@ -16,7 +16,8 @@ func _ready():
 
 
 func _on_Button_pressed():
-	$AudioStreamPlayer.stop()
+	$Audioplay.stop()
+	$AudioStreamPlayer.queue_free()
 	$AnimationPlayer2.play("silencio")
 	pass # Replace with function body.
 
@@ -52,7 +53,8 @@ func _on_play2_pressed():
 
 
 func _on_jugar_timeout():
-	get_tree().change_scene("res://presemtacio.tscn")
+	$AudioStreamPlayer.stop()
+	get_tree().change_scene("res://prologo.tscn")
 	pass # Replace with function body.
 
 

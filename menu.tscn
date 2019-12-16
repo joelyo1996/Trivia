@@ -2,12 +2,12 @@
 
 [ext_resource path="res://menu.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/promero.jpg" type="Texture" id=2]
-[ext_resource path="res://asset/musica/menu.ogg" type="AudioStream" id=3]
+[ext_resource path="res://asset/Imagenes/cosalsadkierdn.png" type="Texture" id=3]
 [ext_resource path="res://asset/Imagenes/boton muchoca2.png" type="Texture" id=4]
 [ext_resource path="res://asset/Imagenes/info.png" type="Texture" id=5]
 [ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=6]
 [ext_resource path="res://asset/Imagenes/plau.png" type="Texture" id=7]
-[ext_resource path="res://asset/musica/sonido de start.ogg" type="AudioStream" id=8]
+[ext_resource path="res://asset/musica/menu.ogg" type="AudioStream" id=8]
 [ext_resource path="res://asset/Imagenes/boton muchoca3.png" type="Texture" id=9]
 [ext_resource path="res://Fuente/kenvector_future.ttf" type="DynamicFontData" id=10]
 [ext_resource path="res://asset/Imagenes/asdfgo.png" type="Texture" id=11]
@@ -41,19 +41,19 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Button:modulate")
+tracks/2/path = NodePath("salircre:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.9 ),
+"times": PoolRealArray( 0, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("salircre:modulate")
+tracks/3/path = NodePath("creditos2:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -102,18 +102,6 @@ tracks/2/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
-tracks/3/type = "value"
-tracks/3/path = NodePath("Button:modulate")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
-}
 
 [sub_resource type="Animation" id=3]
 tracks/0/type = "value"
@@ -141,25 +129,25 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Button:modulate")
+tracks/2/path = NodePath("salircre:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0.0219266, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("salircre:modulate")
+tracks/3/path = NodePath("creditos2:modulate")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0.0219266, 1 ),
+"times": PoolRealArray( 0.0153131, 1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
@@ -268,15 +256,20 @@ position = Vector2( -22.1243, 38.0888 )
 scale = Vector2( 0.822634, 0.827706 )
 texture = ExtResource( 2 )
 
+[node name="creditos2" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -49.9667, -7.40247 )
+texture = ExtResource( 3 )
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 3 )
+volume_db = -80.0
 
 [node name="silencio" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 352.537
-margin_top = 263.189
-margin_right = 1700.54
-margin_bottom = 1015.19
+margin_left = 323.0
+margin_top = 250.0
+margin_right = 1967.0
+margin_bottom = 1132.0
 rect_scale = Vector2( 0.1, 0.1 )
 icon = ExtResource( 4 )
 
@@ -332,14 +325,6 @@ anims/silencio = SubResource( 5 )
 position = Vector2( 416.316, 295.372 )
 scale = Vector2( 0.138902, 0.111718 )
 texture = ExtResource( 9 )
-
-[node name="Button" type="Button" parent="."]
-modulate = Color( 1, 1, 1, 0 )
-margin_left = 169.108
-margin_top = -99.7432
-margin_right = 487.108
-margin_bottom = 194.257
-text = "Joel, Gaston, Enzo, Leo, Fer, Patricia"
 
 [node name="Label" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )

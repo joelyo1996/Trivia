@@ -1042,6 +1042,7 @@ scale = Vector2( 0.996739, 0.819452 )
 texture = ExtResource( 16 )
 
 [node name="preguta6" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 765.018, 305.003 )
 scale = Vector2( 0.996739, 0.819452 )
 texture = ExtResource( 17 )
