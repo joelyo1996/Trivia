@@ -20,7 +20,7 @@ func personaje1():
 
 func _on_menu2_personaje1():
 	print("hola")
-	$Sprite.queue_free()
+	
 	emit_signal("guerrero")
 	#$AnimationPlayer.play("guerrero")
 	pass # Replace with function body.

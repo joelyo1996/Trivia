@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://presemtacio.gd" type="Script" id=1]
 [ext_resource path="res://asset/Imagenes/Nuevo Lienzo.jpg" type="Texture" id=2]
 [ext_resource path="res://asset/Imagenes/prologo.ogv" type="VideoStream" id=3]
-[ext_resource path="res://asset/Imagenes/boton_atraso.png" type="Texture" id=4]
-[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=5]
-[ext_resource path="res://audio.tscn" type="PackedScene" id=6]
+[ext_resource path="res://asset/musica/correcto.ogg" type="AudioStream" id=4]
+[ext_resource path="res://audio.tscn" type="PackedScene" id=5]
 
 [sub_resource type="Animation" id=1]
 resource_name = "salir"
@@ -50,7 +49,7 @@ stream = ExtResource( 3 )
 autoplay = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 30.0
 autostart = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -60,22 +59,16 @@ anims/salir = SubResource( 1 )
 
 [node name="Button" type="Button" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 435.0
-margin_top = 467.0
-margin_right = 547.0
-margin_bottom = 575.0
-
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 484.817, 522.921 )
-rotation = 3.14159
-scale = Vector2( 0.188419, 0.136799 )
-texture = ExtResource( 4 )
+margin_left = 5.0
+margin_top = 4.0
+margin_right = 1027.0
+margin_bottom = 602.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 4 )
 volume_db = -80.0
 
-[node name="Node2D" parent="." instance=ExtResource( 6 )]
+[node name="Node2D" parent="." instance=ExtResource( 5 )]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="salir" to="." method="_on_salir_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
